@@ -69,17 +69,30 @@
   - `research_papers/04_crucian_carp_rice_crab_polyculture_zh.pdf`（稻田鲫生态位描述）：
     "鲫(Carassius auratus)为温水性鱼类，喜在水的底层活动，对低氧的适应能力很强，是杂食性鱼类，主要食有机碎屑、水草、植物种子及摇蚊幼虫、枝角类和桡足类。"
 
-### 3.2 鲤鱼 (*Cyprinus carpio*) 的食性
+### 3.2 鲤鱼 (*Cyprinus carpio*) 的食性（国际文献极大丰富了此部分）
 
-- 杂食偏**动物食性**：螺、幼蚌、蚬、摇蚊幼虫、水生昆虫幼虫、小型甲壳动物、虾；兼食水草茎、种子与有机碎屑。
-- 典型摄食动作：**口部可管状凸出，拱入泥中**（"grubbing"），筛取食物、由鳃盖排出泥沙——这一行为常使鲤鱼所在水域产生**浑水气泡串**。
-- 关键资料摘录：
+- 杂食偏**动物食性**：螺、幼蚌、蚬、**摇蚊幼虫（chironomid larvae，几乎每篇国际文献都会提到）**、水生昆虫幼虫、小型甲壳动物、虾；兼食水草茎、种子与有机碎屑。
+- 典型摄食动作：**口部管状凸出拱入泥中**（"grubbing" / "rooting"），筛取食物、由鳃盖排出泥沙——这一行为常使鲤鱼所在水域产生**浑水气泡串**。
+- **核心生理特征（来自国外文献）**：
+  - **化学信号优先于视觉**：鲤鱼依靠嗅觉（olfaction）和味觉（gustation）而非视觉定位食物。尤其对**游离氨基酸（丙氨酸、甘氨酸、脯氨酸）、甜菜碱（betaine）、核苷酸**高度敏感。这是 boilies（欧洲饵球）配方的核心逻辑。
+    - 参考：`international/07_carp_behavior_review_2024.html`、`international/09_carpfisher_feeding_behavior_guide.html`
+  - **无胃（agastric）**：鲤鱼没有胃，口后直接连接咽骨 + 肠道。这意味着食物通过速度快，需要持续少量补充——天然状态下的"少量多餐"与欧洲钓鲤界的"little and often"策略完全一致。
+    - 参考：`international/07_carp_behavior_review_2024.html`（"The common carp has no stomach; the oesophagus leads directly into the first segment of the intestine."）
+  - **5:5 下咽齿（pharyngeal teeth）+ 腭器官（palatal organ）**：鲤鱼咽部有 3 行下咽齿（2 侧共 5+5 个主要齿）与肉质腭器官共同研磨/筛取食物；鳃耙（gill rakers）形成"错流过滤"（cross-flow filtration），有效收集小颗粒食物。
+    - 参考：`international/04_smithsonian_nemesis_cyprinus_carpio.html`、`international/07_carp_behavior_review_2024.html`
+  - **反复抽水检验（tasting by water pumping）**：鲤鱼会在食物附近反复吸水/吐水来检验质地，如果发现硬物（如金属钩）立即吐弃——这就是欧洲"**hair rig（毛钩）**"（把诱饵与金属钩分离）行为学原理。
+    - 参考：`international/09_carpfisher_feeding_behavior_guide.html`（引用 *Journal of Experimental Biology* 的味觉实验）
+- 关键资料摘录（国内 + 国际对照）：
   - `official_reports/02_fao_common_carp_biology_en.htm`：
     "Their common natural foods are benthos such as snails, young clams, corbicula spp., cladocera, copepods, chironomid larvae, shrimps and insects' larvae. Also they take certain amount of detritus of higher aquatic plants and plant seeds."
+  - `international/04_smithsonian_nemesis_cyprinus_carpio.html`（Smithsonian）：
+    *"Omnivorous; feeds on aquatic plants, seeds, algae, and a wide variety of benthic invertebrates including snails, clams, worms, and insect larvae. Uses protractile mouth to root through sediment in search of food."*
   - `official_reports/10_croplibrary_common_carp_characteristics.html`：
     "Its typical feeding behavior, known as 'grubbing', involves vigorously rooting through sediment, ingesting mouthfuls of mud, sorting out food with gill rakers and the palatal organ, and expelling inedible silt and debris through the gills …"
   - `official_reports/07_fao_common_carp_zh.html`（FAO 中文 fact sheet，鲤）：详述了鲤在养殖条件下对**豆饼、菜籽饼、麸皮、米糠、谷物、螺肉等**均可利用。
   - `research_papers/02_xijiang_carp_larvae_growth_digestive_enzymes_zh.pdf`（西江鲤仔稚鱼生长及消化酶研究）：指出鲤仔稚鱼期对枝角类、丰年虫等**动物性活饵**依赖度极高；成鱼阶段则通过发育完善的淀粉酶、脂肪酶、胰蛋白酶，可有效分解植物性与动物混合饵料。
+  - `international/05_iowa_dnr_common_carp_profile.html`（爱荷华州渔业局）：
+    "Common carp are omnivorous — they eat insects, crustaceans, mollusks, aquatic plants, and algae. They feed by sifting through bottom sediments with their downward-pointing, toothless mouths."
 
 ### 3.3 "分批产卵 → 繁殖前后食量变化"对钓的启示
 
@@ -96,12 +109,20 @@
   - FishBase 关键句："Feeds all day but **mainly at night** on plankton, benthic invertebrates, plant materials and detritus."
   - 参考：`official_reports/05_carassius_carassius_fishbase_270_summary.html`
 - **鲤鱼**：**黄昏 → 夜间** 为明显高峰，白昼在浅水区易受惊扰；半集约化池塘的声学遥测研究显示，鲤鱼活跃度与摄食行为在 18:00–06:00 间显著高于白天。
-  - 参考：
+  - 参考（国内）：
     - `research_papers/01_common_carp_social_isolation_and_context_zh.pdf`（2026，《水生生物学报》：鲤幼鱼在不同生态场景下的活跃度——开放水域 vs 食物场景 vs 食物+隐蔽场所）：
       "**生态场景显著影响其运动表现，在食物场景下，个体游泳速度最高；而在食物+隐蔽场所场景中…… 群养组的群体游泳速度和运动时间比均随环境复杂化而上升。**"
     - `monographs/02_irgrid_carp_activity_level_and_rhythm_page.html`（杨严鸥等 2005，《动物学报》）：
       "饥饿时的活动水平显著低于饱食时；白昼/夜间相对活动水平不受摄食与否显著影响…… 丰鲤与其亲本都呈现**昼间 + 夜间**双峰活动节律，夜间高峰普遍高于或等于白昼。"
     - 生物通综述："**投喂应更多集中在黄昏和夜间进行，以匹配鲤鱼的自然活动高峰**。"（基于 acoustic telemetry + stable isotope 的养殖实验。）
+  - 参考（国际 · 最关键的野外实验）：
+    - `international/06_umn_carp_bait_edna_pheromone.html`（**美国明尼苏达大学 2018**，发表于 *Ecology and Evolution*）：**用 eDNA、无线电标记、性信息素采样三种方法交叉验证**，得出核心结论：
+      1. 鲤鱼会在**诱饵投放点形成夜间集群**，与对照点差异显著；
+      2. 诱饵点 eDNA 浓度在**夜间显著上升**，与鲤鱼实际出现时间吻合；
+      3. 雌性个体释放的**性信息素（prostaglandin F2α）**会进一步吸引更多鲤鱼聚集——**形成"自我强化"的窝点效应**；
+      4. 同一钓点**连续几天投放饵料**后，夜间集群的规模和稳定性都会上升。
+      → **钓鱼启示**："预打窝 + 连续几天同一钓点 + 夜钓"不是玄学，而是有生态学实验直接支持的策略。
+    - `international/01_usfws_crucian_carp_erss_2025.pdf`（USFWS 2025）：Crucian carp 也被观察到"主要夜间觅食"（crepuscular/nocturnal feeding）。
 
 **→ 钓鱼启示（总结）**：
 
@@ -144,7 +165,40 @@
 
 ---
 
-## 七、对窝料/钓饵的推荐方向（基于文献食性）
+## 六（B）、气压、风向、溶氧与水色（国外文献最为强调的环境变量）
+
+> 国内资料对"气压变化影响鱼类摄食"的量化描述非常少，但欧洲和美国的鲤钓文献几乎每篇都会提到这些变量。以下结论综合自 `international/09_carpfisher_feeding_behavior_guide.html`（引用 *Journal of Zoology, 1986* 和 *Journal of Experimental Biology*）与 `international/07_carp_behavior_review_2024.html`。
+
+### 1. 大气压（barometric pressure）
+
+- **气压稳定或缓慢上升**：鲤鱼摄食活跃度最高。
+- **气压快速下降（风暴前 / storm front）**：鲤鱼摄食明显减少，尤其大型个体更敏感。
+- 原理：鱼的鳔（swim bladder）对气压变化极为敏感，气压下降会改变其浮力调节；同时低气压往往伴随低溶氧（warm water holds less oxygen）。
+- **钓鱼启示**：出钓前看 2–3 天的气压曲线，选择气压稳定或缓慢上升的日子；避免气压骤降的天气。
+
+### 2. 风向与风岸（wind direction & lee shore）
+
+- **下风岸（lee shore / windward bank）**：风把**浮游生物、有机碎屑、水生昆虫**推向下风岸的浅水区。同时风带来三重好处：
+  1. **溶氧升高**（水-气交换增加）；
+  2. **水面破碎**（鲤鱼视觉警觉性下降，更靠近岸边）；
+  3. **食物聚集**（天然饵料被推向岸边）。
+- 欧洲钓鲤指南将"下风岸 + 水深 1.5–3 m 的沙泥底"列为首选标点模板。
+
+### 3. 进水口与涨水
+
+- 降雨后地面径流携带**昆虫、植物种子、有机碎屑**进入水体，同时大幅提升溶氧。
+- 鲤鱼对进水口的摄食响应极快——Carp Fisher 描述："It is common to catch carp within 1–2 hours of a rain event in the vicinity of inflows."
+- **浑浊水（turbid water）**：鲤鱼拱泥本身也会制造浑浊。但外部来源的浑浊（如涨水挟带泥沙）会降低其视觉依赖（其本身也不以视觉为主），使其更敢靠近岸边。
+
+### 4. 溶氧（dissolved oxygen, DO）的阈值（补充）
+
+- 鲤鱼摄食活跃的 DO 下限约为 **5 mg/L**；低于 **3 mg/L** 时基本停止主动摄食。
+- **夏季午后**的静水池塘/湖泊，DO 可能骤降（尤其底层因有机物分解耗氧），这就是"夏季午后难钓鱼"的核心机制之一。
+- 参考：`international/07_carp_behavior_review_2024.html`、`international/10_worldfish_carp_aquaculture_review.html`
+
+---
+
+## 七、对窝料/钓饵的推荐方向（基于国内 + 国际文献食性）
 
 ### 针对鲫鱼（杂食偏植食 + 小型底栖动物）
 
@@ -155,13 +209,16 @@
 | 扩散气味柱 | 含**酒香、蒜香、氨基酸**（丙氨酸、甘氨酸、脯氨酸）的小药/泡酒米 | 底层杂食鱼类依靠嗅觉与味觉定位食物 |
 | 比重与入口性 | **轻比重 + 小粒径**（搓小饵、拉饵、小米/酒米打窝） | 鲫鱼口小，且以小颗粒食物为主 |
 
-### 针对鲤鱼（杂食偏动物食性 + 拱泥觅食）
+### 针对鲤鱼（杂食偏动物食性 + 拱泥觅食 + 化学信号优先）
 
 | 思路 | 推荐成分 | 文献依据 |
 |------|----------|----------|
 | "气味柱"打窝 | **螺肉、蚌肉、发酵玉米、豆饼、菜籽饼、红薯块** | 天然食性中底栖螺/蚌、摇蚊幼虫比例大；发酵谷物易形成气味柱 |
 | 硬饵颗粒 | 玉米碴、**颗粒饲料、麦粒**（可泡软/发酵） | 鲤的"拱泥 + 筛取"行为对颗粒食物更有效 |
 | 动物引诱 | 螺肉丁、**虾肉、蛆虫**（尤其夏季夜间） | 鲤偏动物食性；这些天然饵料对其嗅觉吸引力强 |
+| 化学诱食信号（国外文献重点） | **氨基酸**（丙氨酸、甘氨酸、脯氨酸、谷氨酸）+ **甜菜碱（betaine）** + **核苷酸** | `international/07_carp_behavior_review_2024.html`、`international/09_carpfisher_feeding_behavior_guide.html`：鲤鱼嗅觉对上述游离化合物阈值极低，远早于视觉发现 |
+| boilies 思路（欧洲饵球） | 高蛋白颗粒 + 糖类（谷物粉）+ 氨基酸/甜菜碱诱食剂 + 硬质壳 | 鲤鱼反复抽水检验后摄取；hair rig（毛钩/脱钩绳）使钩与诱饵分离，减少吐钩 |
+| 窝量策略（Leibniz 实验） | **少量、持续、稳定**；一次性大窝反而低效 | `international/08_leibniz_carp_groundbait_2004.pdf`：窝量与捕获量存在"阈值关系"；"无胃 → 持续少量摄食"的天然习性支持 |
 | 比重 | 重比重；**搓饵 + 沉底** | 鲤为底栖，贴底觅食，漂目以**顿口、黑漂**为主 |
 
 ---
@@ -186,6 +243,17 @@
 | `monographs/02_irgrid_carp_activity_level_and_rhythm_page.html` | 鲤**饥饿/饱食状态下**的昼夜活动节律（经典国内研究） |
 | `monographs/03_China_pond_aquaculture_book_sample_chapter.pdf` | 《中国池塘养鱼学》样章，介绍主要养殖鱼类的生物学特征 |
 | `monographs/04_natureServe_cyprinus_carpio_profile.html` | *Cyprinus carpio* 全球分布与生境总览 |
+| **—— 以下为国际资料（10 个）——** |  |
+| `international/01_usfws_crucian_carp_erss_2025.pdf` | 🇺🇸 USFWS 2025 最新版 · Crucian carp 分布/生境/温度/低氧耐受/分批产卵 |
+| `international/02_fao_common_carp_en.html` | 🇺🇳 FAO 英文版 · Common carp 形态/摄食/温度参数 |
+| `international/03_fao_chapter1_biology.html` | 🇺🇳 FAO · 淡水鱼类生物学 Chapter 1 · 鲫/鲤对比 |
+| `international/04_smithsonian_nemesis_cyprinus_carpio.html` | 🇺🇸 Smithsonian 研究院 · Common carp 入侵物种档案（生境/食性/形态/分布） |
+| `international/05_iowa_dnr_common_carp_profile.html` | 🇺🇸 Iowa DNR · Common carp 物种档案（食物偏好） |
+| `international/06_umn_carp_bait_edna_pheromone.html` | 🇺🇸 明尼苏达大学 2018 · **诱饵点+eDNA+性信息素 野外实验**——"预打窝/连钓几天"的科学依据 |
+| `international/07_carp_behavior_review_2024.html` | 🇪🇺 Open Veterinary Journal 2024 · 鲤行为与管理综述（无胃生理/温度阈值/消化生理） |
+| `international/08_leibniz_carp_groundbait_2004.pdf` | 🇩🇪 Leibniz 淡水生态研究所 2004 · **窝料投放量与捕获量的野外实验**（PDF） |
+| `international/09_carpfisher_feeding_behavior_guide.html` | 🇬🇧 Carp Fisher · 鲤鱼摄食行为终极指南（气压/风向/溶氧/hair rig 行为学原理） |
+| `international/10_worldfish_carp_aquaculture_review.html` | 🇲🇾 WorldFish · Common carp 水产养殖综述（生境/食性/温度参数） |
 
 ---
 

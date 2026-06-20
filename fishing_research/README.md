@@ -26,11 +26,22 @@ fishing_research/
 │   ├── 02_xijiang_carp_larvae_growth_digestive_enzymes_zh.pdf # 西江鲤仔稚鱼生长及消化酶活性变化 (2019)
 │   ├── 03_goldfish_nutritional_status_and_aerobic_scope_on_group_behaviour_zh.pdf # 营养状态和代谢范围对锦鲫幼鱼群体行为的影响 (2023)
 │   └── 04_crucian_carp_rice_crab_polyculture_zh.pdf       # 稻田混养鲫对中华绒螯蟹生长和营养的影响（含鲫生态位描述，2025）
-└── monographs/                                # 经典专著/研究所史资料
-    ├── 01_hb_CAS_Changjiang_fishes_page.html  # 中科院水生所 ·《长江鱼类》著述背景
-    ├── 02_irgrid_carp_activity_level_and_rhythm_page.html # 中科院水生所IRGrid ·《饥饿和饱食状态下丰鲤与其亲本的活动水平和活动节律》(2005)
-    ├── 03_China_pond_aquaculture_book_sample_chapter.pdf  # 《中国池塘养鱼学》样章（张扬宗等 主编，科学出版社 1989）
-    └── 04_natureServe_cyprinus_carpio_profile.html        # NatureServe · Cyprinus carpio 全球保护状态/生境总览
+├── monographs/                                # 经典专著/研究所史资料
+│   ├── 01_hb_CAS_Changjiang_fishes_page.html  # 中科院水生所 ·《长江鱼类》著述背景
+│   ├── 02_irgrid_carp_activity_level_and_rhythm_page.html # 中科院水生所IRGrid ·《饥饿和饱食状态下丰鲤与其亲本的活动水平和活动节律》(2005)
+│   ├── 03_China_pond_aquaculture_book_sample_chapter.pdf  # 《中国池塘养鱼学》样章（张扬宗等 主编，科学出版社 1989）
+│   └── 04_natureServe_cyprinus_carpio_profile.html        # NatureServe · Cyprinus carpio 全球保护状态/生境总览
+└── international/                             # 国外科研/机构资料（10 个文件）
+    ├── 01_usfws_crucian_carp_erss_2025.pdf             # 🇺🇸 USFWS · Crucian carp 生态风险筛查总览（2025 新版）
+    ├── 02_fao_common_carp_en.html                      # 🇺🇳 FAO · Common carp 生物学 fact sheet（英文版）
+    ├── 03_fao_chapter1_biology.html                    # 🇺🇳 FAO · 淡水鱼类生物学 Chapter 1
+    ├── 04_smithsonian_nemesis_cyprinus_carpio.html     # 🇺🇸 Smithsonian · Common carp 入侵物种档案
+    ├── 05_iowa_dnr_common_carp_profile.html            # 🇺🇸 Iowa DNR · Common carp 物种档案
+    ├── 06_umn_carp_bait_edna_pheromone.html            # 🇺🇸 明尼苏达大学 · 诱饵点+eDNA+性信息素 野外实验 (2018)
+    ├── 07_carp_behavior_review_2024.html               # 🇪🇺 Open Veterinary Journal · 鲤行为与管理综述 (2024)
+    ├── 08_leibniz_carp_groundbait_2004.pdf             # 🇩🇪 Leibniz 淡水生态研究所 · 窝料对鲤捕获量影响 (2004)
+    ├── 09_carpfisher_feeding_behavior_guide.html       # 🇬🇧 Carp Fisher · 鲤鱼摄食行为终极指南
+    └── 10_worldfish_carp_aquaculture_review.html       # 🇲🇾 WorldFish · Common carp 水产养殖综述
 ```
 
 ---
@@ -49,12 +60,13 @@ fishing_research/
 ### 2. 食性（用于判断窝料/钓饵思路）
 
 - **鲫**：杂食偏植食 + 底栖无脊椎动物。幼鱼以浮游动物为主；成鱼取食有机碎屑、丝状藻、水草碎片/种子、摇蚊幼虫、枝角类、桡足类。
-- **鲤**：杂食偏动物食性。天然饵料：螺、幼蚌、蚬、摇蚊幼虫、水生昆虫幼虫、小型甲壳动物、虾；兼食水草茎、种子与有机碎屑。典型摄食动作：**口部管状凸出拱泥**（"grubbing"）——筛取食物后从鳃盖排出泥浆。
+- **鲤**：杂食偏动物食性。天然饵料：螺、幼蚌、蚬、摇蚊幼虫、水生昆虫幼虫、小型甲壳动物、虾；兼食水草茎、种子与有机碎屑。典型摄食动作：**口部管状凸出拱泥**（"grubbing"）——筛取食物后从鳃盖排出泥浆。国外文献补充：鲤以**化学信号（嗅觉/味觉）而非视觉**定位食物，尤其对氨基酸（丙氨酸、甘氨酸、脯氨酸）和甜菜碱高度敏感；鲤**无胃（agastric）**，食物直入肠道，因此"少量多餐"是天然习性——与欧洲钓鲤业 boilies 配方思路直接吻合。
+  - 参考：`international/08_leibniz_carp_groundbait_2004.pdf`、`international/07_carp_behavior_review_2024.html`、`international/09_carpfisher_feeding_behavior_guide.html`
 
 ### 3. 昼夜节律
 
 - **鲫**：整日可摄食，但**夜间到黎明**为高峰；清晨（4:00–8:00）与黄昏（16:00–19:00）觅食活动较强。
-- **鲤**：**黄昏至夜间** 活跃度最高（在半集约化池塘与野外观测一致），投喂应向夜间倾斜；白昼在浅水区觅食易受干扰。
+- **鲤**：**黄昏至夜间** 活跃度最高（在半集约化池塘与野外观测一致），投喂应向夜间倾斜；白昼在浅水区觅食易受干扰。**明尼苏达大学 2018 年野外实验**（`international/06_umn_carp_bait_edna_pheromone.html`）显示：诱饵点附近鲤鱼会形成**夜间集群**，eDNA 与性信息素浓度同步升高，形成"自我强化"的吸引效应——这正是"连续几天在同一钓点打窝"效果越来越好的直接科学依据。
 
 ### 4. 温度与季节影响
 
@@ -64,13 +76,21 @@ fishing_research/
 - 水温 **>30 ℃**：喜潜入深水避暑；晨昏浅滩觅食。
 - 鲫鱼/鲤鱼均具**分批产卵习性**（分批成熟，多次产卵），产卵温度一般 >18 ℃，依赖沉水植物附着鱼卵——繁殖期前后的觅食/集群行为是重要锚点。
 
-### 5. 社会行为与群体结构（对窝量/选点的启示）
+### 5. 社会行为与集群（对窝量/选点的启示）
 
 - **鲤**：具明显**集群性**，在开放水域与隐蔽场所表现不同的游动速度同步性与极性（cohesion/polarity）。社会隔离会降低其群体协调性与活跃度（见文件 01）。
 - **鲫**：在有捕食者的水体中体高较大、活动偏谨慎；在无捕食者水体身形细长、活跃度高。
 - **环境复杂性越高**（水生植物/结构越多），鱼群凝聚性与极性会下降——这意味着**水草过密处，上鱼节奏更分散**；而**开阔沙泥底 + 局部结构**往往是聚窝好点。
+- **国外窝料实验结论**（`international/08_leibniz_carp_groundbait_2004.pdf`，Leibniz 淡水生态研究所，2004）：专业钓鲤者平均每人每年投放 **215 kg** 窝料；窝料投放量与捕获量存在**阈值关系**——过量投放反而低效。结合"无胃 → 少量多餐"生理特征，**少量、持续、稳定的打窝策略**优于一次性大窝。
 
-### 6. 推荐窝料/钓饵方向（基于食性）
+### 6. 气压、风向与溶氧的影响（国外文献特别强调）
+
+- **气压下降（storm front）**：鲤鱼摄食活跃度显著降低，尤其大型个体更敏感。Carp Fisher（引用 *Journal of Zoology*）建议：**气压稳定或缓慢上升**时作钓效果最好。
+- **下风岸（lee shore）**：风把**浮游生物/有机碎屑/水生昆虫**推向下风岸，同时**提高溶氧 + 破碎水面降低鲤鱼视觉警觉**。欧洲钓鲤指南将下风岸列为首选标点。
+- **进水口**：降雨带来的地面径流携带昆虫、种子、碎屑进入水体，同时快速提升溶氧——是鲤鱼过路觅食的高频区。
+- 参考：`international/09_carpfisher_feeding_behavior_guide.html`
+
+### 7. 推荐窝料/钓饵方向（基于食性）
 
 - 对**鲫**：麸类（麦麸/豆饼粉）、米糠、玉米粉、蚯蚓、红虫（摇蚊幼虫）、米饭、薯泥。强调**颗粒细碎 + 持续扩散气味**。
 - 对**鲤**：螺肉、蚌肉、豆饼、菜籽饼、红薯块、玉米碴、发酵谷物；强调**下沉后形成"气味柱"**，配合拱泥觅食习性。

@@ -1,0 +1,3519 @@
+<!doctype html>
+<html lang="en">
+
+
+
+
+<!-- write an email link to nemesis@si.edu-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/nemesis/static/css/styles.css"  rel="stylesheet">
+    <link href="/nemesis/static/css/nemesis.css"  rel="stylesheet">
+    <link href="/nemesis/static/css/bioregions.css"  rel="stylesheet" type="text/css">
+  
+
+    <!-- font awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- load jQuery JS from CDN -->
+    <!--<script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>-->
+  
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1818437-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1818437-2');
+</script>
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<!-- htmx-->
+<script src="https://unpkg.com/htmx.org@1.9.6"></script>
+
+  <!-- DataTable -->
+<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script> -->
+
+<link href="https://cdn.datatables.net/v/bs4/dt-1.13.4/b-2.3.6/b-html5-2.3.6/datatables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="https://cdn.datatables.net/v/bs4/dt-1.13.4/b-2.3.6/b-html5-2.3.6/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+
+
+    <!-- load Leaflet CSS and JS from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""/>
+
+
+          <!--<script src="/static/js/scripts.js"></script>-->
+          
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+         <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+           integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+           crossorigin="">
+         </script>
+         
+
+
+
+         
+
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+  
+         <!-- load Popper JS from CDN -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+           integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+           crossorigin="anonymous">
+         </script>
+  
+         <!-- chart.js -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+  
+  
+         <link href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" rel="stylesheet">
+  
+        <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+  
+<script  type="text/javascript">
+        /*
+  Source: https://stackoverflow.com/a/16887276/1709587
+
+  Usage instructions:
+
+  Call
+
+      jQuery('#mySelectElement').selectOptionWithText('target_text');
+
+  to select the <option> element from within #mySelectElement whose text content
+  is 'target_text' (or do nothing if no such <option> element exists).
+*/
+jQuery.fn.selectOptionWithText = function selectOptionWithText(targetText) {
+    return this.each(function () {
+        var $selectElement, $options, $targetOption;
+
+        $selectElement = jQuery(this);
+        $options = $selectElement.find('option');
+        $targetOption = $options.filter(
+            function () {return jQuery(this).text() == targetText}
+        );
+
+        // We use `.prop` if it's available (which it should be for any jQuery
+        // versions above and including 1.6), and fall back on `.attr` (which
+        // was used for changing DOM properties in pre-1.6) otherwise.
+        if ($targetOption.prop) {
+            $targetOption.prop('selected', true);
+        } 
+        else {
+            $targetOption.attr('selected', 'true');
+        }
+    });
+}
+</script>
+
+
+    
+    <style>
+      .jumbotron {
+        background-image: url("/nemesis/static/images/dvex_subdued.jpg");
+        background-size: cover;
+        background-position: 58.33325% center;
+      }
+      .jumbotron h1 {
+        color: #fff;
+      }
+      .jumbotron h2 {
+        color: #fff;
+      }
+      .jumbotron p {
+        color: #fff;
+      }
+      .card {
+        background-color: #4A504C;
+      }
+  
+    .wrapper {
+        display: flex;
+        width: 100%;
+    }
+  
+    #sidebar {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 999;
+        background: #7386D5;
+        color: #fff;
+        transition: all 0.3s;
+    }
+
+
+}
+
+    </style>
+  </head>
+
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href=https://serc.si.edu><img height = '40' src='/nemesis/static/images/serc.png'></a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/nemesis/">Nemesis <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://serc.si.edu/labs/marine-invasions-research">Marine Invasions Lab<span
+              class="sr-only"></span></a>
+        </li>
+      </ul>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    
+    
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+
+    <!--    <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    -->
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="/nemesis/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner Portals</a>
+      <div class="dropdown-menu" aria-labelledby="dropdown01">
+        <a class="dropdown-item" href="/nemesis/">Nemesis</a>
+        <a class="dropdown-item" href="/nemesis/calnemo/">California</a>
+        <a class="dropdown-item" href="/nemesis/panama/">Panama</a>
+        <a class="dropdown-item" href="/nemesis/galapagos/">Galapagos</a>
+        <a class="dropdown-item" href="/nemesis/coconemo/">Cocos Island NP</a>
+        <a class="dropdown-item" href="/nemesis/jtmd/">JTMD</a>
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-header h6">Archived Projects</div>
+        <a class="dropdown-item" href="/nemesis/chesreport/">Chesapeake</a>
+        
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown">Browse Species<a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/nemesis/group_profiles">Taxonomic Groups</a>
+        <a class="dropdown-item" href="/nemesis/all_taxa">All Species</a>
+      </div>
+    </li>
+    
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown">Browse Regions<a>
+      <div class="dropdown-menu"> 
+        <div class="dropdown-header h6">States</div>
+        <!-- Change these to the correct endpoints -->
+        <a class="dropdown-item" href="/nemesis/alaska">Alaska</a> 
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/nemesis/regions">Bioregions &amp; Bays</a>
+      </div>
+    </li>
+    
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/nemesis/news">News</a>
+    </li>
+    <li class="nav-item dropdown"></li>
+    
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/nemesis/login">login</a>
+    </li>
+    
+    <span class="navbar-text">
+      
+    </span>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0" method="post" action="/nemesis/results">
+        <input type="hidden" name="csrf_token" value="ImI4MGE2MzYwMjY1NGU3OGRmOGY5Nzk0OTBmMzJjMGQ5OGIwYzhkZjUi.ajXp1Q.MjLR7XFYlx56xPUFCkzJC99ZrCI">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search Taxa" aria-label="Search Taxa" id="taxon" name="taxon">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Search Taxa</button>
+      </form>
+    </div>
+  </nav>
+  
+
+  
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="card flex-row flex-wrap">
+            <div class="card-header border-0" style="width: 14rem">
+                <img src="https://invasions.si.edu/SpImages/Common_carp.jpg" class="card-img-top" alt="Image of Cyprinus carpio">
+            </div>
+            <div class="card-block px-2">
+                <h1 class="card-title text-white"><em>Cyprinus carpio</em></h1>
+                <h4 class="text-white"><a href='../group_summary/Fishes'>Fishes</a></h4>
+                <p class="card-text text-white">carpe, Common Carp, European carp</p>
+            </div>
+            <div class="card-block px-2">
+                    <p class="card-text text-white"><p>Common Carp (<em>Cyprinus carpio</em>) are large freshwater fish, which frequently enters brackish water. They are native to eastern Asia, and central Asia, and Eastern Europe west to the Danube basin. Common Carp were a prized sport-fish and food-fish in Europe, which largely motivated their introduction into North America in the late 1900s. Their introduction into North America did not result in the successful fishery that was envisioned, rather the Carp became known as a nuisance fish that has been blamed, sometimes unfairly, for adversely affecting native fishes and fisheries. Most of their negative impacts have been from increased turbidity and damage to aquatic vegetation.</p>
+</p>
+            </div>
+            
+            <div class="card-footer w-100 text-white small">
+                <p><b>Image Credit:</b> USFWS [Public domain], via Wikimedia Commons</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+<main role="main" class="px-3">
+
+
+    
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-dist-tab" data-toggle="tab" href="#nav-dist" role="tab" aria-controls="nav-dist" aria-selected="false">Distribution</a>
+            <a class="nav-item nav-link" id="nav-occ-tab" data-toggle="tab" href="#nav-occ" role="tab" aria-controls="nav-occ" aria-selected="false">Occurrences</a>
+            <a class="nav-item nav-link" id="nav-desc-tab" data-toggle="tab" href="#nav-desc" role="tab" aria-controls="nav-desc" aria-selected="false">Description</a>
+            <a class="nav-item nav-link" id="nav-tax-tab" data-toggle="tab" href="#nav-tax" role="tab" aria-controls="nav-tax" aria-selected="false">Taxonomy</a>
+            <a class="nav-item nav-link" id="nav-invhist-tab" data-toggle="tab" href="#nav-invhist" role="tab" aria-controls="nav-invhist" aria-selected="false">Invasion History</a>
+            <a class="nav-item nav-link" id="nav-eco-tab" data-toggle="tab" href="#nav-eco" role="tab" aria-controls="nav-eco" aria-selected="false">Ecology</a>
+            <a class="nav-item nav-link" id="nav-imp-tab" data-toggle="tab" href="#nav-imp" role="tab" aria-controls="nav-imp" aria-selected="false">Impacts</a>
+            <a class="nav-item nav-link" id="nav-ref-tab" data-toggle="tab" href="#nav-ref" role="tab" aria-controls="nav-ref" aria-selected="false">References</a>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+
+        
+<div class="tab-pane fade  show active" id="nav-dist" rose="tabpanel" aria-labelledby="nav-dist-tab">
+
+
+    <!--<h2 id="dist">Distribution</h2>-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Regional Distribution Map</h3>
+              <div id="dist_map" style="height: 600px; width: 1000px; display: block; margin: 0 auto;"></div>
+              <div id="gbif_map_note" style="font-size: 0.9rem; margin: 6px 0 12px 0; color: #444;"></div>
+            <table class="table table-striped" id="dist_table">
+                <thead>
+                    <tr>
+                        <th>Bioregion</th>
+                        <th>Region Name</th>
+                        <th>Year</th>
+                        <th>Invasion Status</th>
+                        <th>Population Status</th>
+                        <th>Vectors</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/M130'>M130</a></td>
+                        <td>Chesapeake Bay</td>
+                        <td>1882</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/CASP'>CASP</a></td>
+                        <td>Caspian Sea</td>
+                        <td>0</td>
+                        <td>
+                                Native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/B-IX'>B-IX</a></td>
+                        <td>None</td>
+                        <td>1400</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/B-VIII'>B-VIII</a></td>
+                        <td>None</td>
+                        <td>1400</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/B-VII'>B-VII</a></td>
+                        <td>None</td>
+                        <td>1300</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/P090'>P090</a></td>
+                        <td>San Francisco Bay</td>
+                        <td>1883</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/GL-II'>GL-II</a></td>
+                        <td>Lake Erie</td>
+                        <td>1890</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/GL-III'>GL-III</a></td>
+                        <td>Lake Ontario</td>
+                        <td>1896</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/GL-I'>GL-I</a></td>
+                        <td>Lakes Huron, Superior and Michigan</td>
+                        <td>1894</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/NA-S3'>NA-S3</a></td>
+                        <td>None</td>
+                        <td>1910</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/N090'>N090</a></td>
+                        <td>Kennebec/Androscoggin River</td>
+                        <td>1890</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/N150'>N150</a></td>
+                        <td>Merrimack River</td>
+                        <td>1880</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/N170'>N170</a></td>
+                        <td>Massachusetts Bay</td>
+                        <td>1880</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/M040'>M040</a></td>
+                        <td>Long Island Sound</td>
+                        <td>1880</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/S010'>S010</a></td>
+                        <td>Albemarle Sound</td>
+                        <td>0</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/S020'>S020</a></td>
+                        <td>Pamlico Sound</td>
+                        <td>0</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/S050'>S050</a></td>
+                        <td>Cape Fear River</td>
+                        <td>0</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/M060'>M060</a></td>
+                        <td>Hudson River/Raritan Bay</td>
+                        <td>1832</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/M090'>M090</a></td>
+                        <td>Delaware Bay</td>
+                        <td>1882</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/S060'>S060</a></td>
+                        <td>Winyah Bay</td>
+                        <td>1973</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/S080'>S080</a></td>
+                        <td>Charleston Harbor</td>
+                        <td>0</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/S120'>S120</a></td>
+                        <td>Savannah River</td>
+                        <td>1923</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/S140'>S140</a></td>
+                        <td>St. Catherines/Sapelo Sounds</td>
+                        <td>1970</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G100'>G100</a></td>
+                        <td>Apalachicola Bay</td>
+                        <td>1954</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G130'>G130</a></td>
+                        <td>Pensacola Bay</td>
+                        <td>0</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G140'>G140</a></td>
+                        <td>Perdido Bay</td>
+                        <td>0</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G150'>G150</a></td>
+                        <td>Mobile Bay</td>
+                        <td>1964</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G160'>G160</a></td>
+                        <td>East Mississippi Sound</td>
+                        <td>1951</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G170'>G170</a></td>
+                        <td>West Mississippi Sound</td>
+                        <td>1974</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G200'>G200</a></td>
+                        <td>Barataria Bay</td>
+                        <td>1974</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G220'>G220</a></td>
+                        <td>Atchafalaya/Vermilion Bays</td>
+                        <td>1957</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G190'>G190</a></td>
+                        <td>Mississippi River</td>
+                        <td>1955</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G240'>G240</a></td>
+                        <td>Calcasieu Lake</td>
+                        <td>2003</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G250'>G250</a></td>
+                        <td>Sabine Lake</td>
+                        <td>1953</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G260'>G260</a></td>
+                        <td>Galveston Bay</td>
+                        <td>1953</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G270'>G270</a></td>
+                        <td>Brazos River</td>
+                        <td>1962</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G330'>G330</a></td>
+                        <td>Lower Laguna Madre</td>
+                        <td>1923</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/P260'>P260</a></td>
+                        <td>Columbia River</td>
+                        <td>1883</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/LWINNI'>LWINNI</a></td>
+                        <td>Lake Winnipeg</td>
+                        <td>1950</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/LMANIT'>LMANIT</a></td>
+                        <td>Lake Manitoba</td>
+                        <td>1950</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/LWINNIPOG'>LWINNIPOG</a></td>
+                        <td>Lake Winnipogosis</td>
+                        <td>1970</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/CEDARL'>CEDARL</a></td>
+                        <td>Cedar Lake</td>
+                        <td>1970</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/M050'>M050</a></td>
+                        <td>Great South Bay</td>
+                        <td>0</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/NEP-III'>NEP-III</a></td>
+                        <td>Alaskan panhandle to N. of Puget Sound</td>
+                        <td>1946</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Unknown
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/P160'>P160</a></td>
+                        <td>Coquille River</td>
+                        <td>2013</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/G295'>G295</a></td>
+                        <td>_CDA_G295 (East San Antonio Bay)</td>
+                        <td>1962</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/S155'>S155</a></td>
+                        <td>_CDA_S155 (Altamaha)</td>
+                        <td>1971</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/P298'>P298</a></td>
+                        <td>_CDA_P298 (Fraser)</td>
+                        <td>1940</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/NA-ET3'>NA-ET3</a></td>
+                        <td>Cape Cod to Cape Hatteras</td>
+                        <td>1832</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/NEP-V'>NEP-V</a></td>
+                        <td>Northern California to Mid Channel Islands</td>
+                        <td>1883</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/NA-ET2'>NA-ET2</a></td>
+                        <td>Bay of Fundy to Cape Cod</td>
+                        <td>1880</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/CAR-VII'>CAR-VII</a></td>
+                        <td>Cape Hatteras to Mid-East Florida</td>
+                        <td>1923</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/CAR-I'>CAR-I</a></td>
+                        <td>Northern Yucatan, Gulf of Mexico, Florida Straits, to Middle Eastern Florida</td>
+                        <td>1923</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/163344/NEP-IV'>NEP-IV</a></td>
+                        <td>Puget Sound to Northern California</td>
+                        <td>1883</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+       </div>
+   </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#dist_table').DataTable(
+            {
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'csv',
+                        //Name the CSV
+                        filename: 'Cyprinus_carpio_nemesis_distributions_list'
+                    }
+                ]
+            }
+        );
+    });
+</script>
+
+
+        
+<div class="tab-pane fade  show active" id="nav-occ" rose="tabpanel" aria-labelledby="nav-occ-tab">
+    
+    <!--<h2 id="dist">Distribution</h2>-->
+
+    <div id="occ_panel" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 id="occ_map_label">Occurrence Map</h3>
+              <div id="occ_map" style="height: 600px; width: 1000px; display: block; margin: 0 auto;"></div>
+
+            
+            <table class="table table-striped" id="occ_table">
+                <thead>
+                    <tr>
+                        <th>OCC_ID</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th>Date</th>
+                        <th>Locality</th>
+                        <th>Status</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    
+                </tbody>
+            </table>
+        
+       </div>
+   </div>
+</div>
+<script type="text/javascript">
+            $(document).ready( function () {
+                $('#occ_table').DataTable();
+    } );
+</script>
+
+
+<script>
+    document.getElementById("occ_map").style.height = '0px'
+    document.getElementById("occ_map_label").style.visibility = 'Hidden'
+    document.getElementById("occ_table").style.visibility = 'Hidden'
+</script>
+
+        
+<div class="tab-pane fade" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab">
+
+    <h2 id="desc">Description</h2>
+    <p><p>Common Carp (<em>Cyprinus carpio</em>) are large freshwater fish, which frequently enter brackish water. Fish of the family Cyprinidae have a single dorsal fin, abdominal pelvic fins, a lateral line, and cycloid (circular) scales. They lack true spines in their fins, but a few, including Common Carp, have secondary spine-like structures. Cyprinidae lack teeth in their mouths, but have 1-3 rows of pharyngeal teeth. Most fishes of this family have forked tails (Page and Burr 1991). Common Carp have two barbels on each side of the mouth, the rear barbels are longer. Their body is deep and thick, with an arched back, and a flatter belly. Their mouth is terminal in young fish, but more ventral in adults. Their scales are large, with 32 to 38 lateral scales, in the typical form, but the cultivated varieties &#39;Mirror Carp&#39; have a few large scales, and &#39;Leather Carp&#39; have none. Their dorsal fin is long, with 17-21 rays, and a stout anterior saw-toothed spinelike ray. Their anal fin also has an anterior spinelike ray, and 4-6 rays. Common Carp can grow to a length of 1220 mm. Juveniles are usually gray, and wild adults are usually brassy-yellowish or greenish, with yellowish to reddish anal and tail fins. Koi, the Japanese cultured varieties, often kept in ornamental ponds in the US, can be red, black, silver gold, or variegated, and occasionally escape to the wild. Common Carp can hybridize with Goldfish, but are not known to hybridize with native North American cyprinids (Page and Burr 1991; Murdy et al. 1997; Schofield et al. 2005)</p>
+</p>
+    <hr>
+</div>
+        
+<div class="tab-pane fade" id="nav-tax" role="tabpanel" aria-labelledby="nav-tax-tab">
+
+    <h2 id="tax">Taxonomy</h2>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Taxonomic Tree</h3>
+            
+            <table>
+                  
+                <tr>
+                    <td><strong>Kingdom:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Animalia</td>
+                </tr> 
+                <tr>
+                    <td><strong>Phylum:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Chordata</td>
+                </tr> 
+                <tr>
+                    <td><strong>Subphylum:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Vertebrata</td>
+                </tr> 
+                <tr>
+                    <td><strong>Superclass:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Osteichthyes</td>
+                </tr> 
+                <tr>
+                    <td><strong>Class:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Actinopterygii</td>
+                </tr> 
+                <tr>
+                    <td><strong>Subclass:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Neopterygii</td>
+                </tr> 
+                <tr>
+                    <td><strong>Infraclass:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Teleostei</td>
+                </tr> 
+                <tr>
+                    <td><strong>Superorder:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Ostariophysi</td>
+                </tr> 
+                <tr>
+                    <td><strong>Order:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Cypriniformes</td>
+                </tr> 
+                <tr>
+                    <td><strong>Superfamily:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Cyprinoidea</td>
+                </tr> 
+                <tr>
+                    <td><strong>Family:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Cyprinidae</td>
+                </tr> 
+                <tr>
+                    <td><strong>Genus:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Cyprinus</td>
+                </tr> 
+                <tr>
+                    <td><strong>Species:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> carpio</td>
+                </tr>
+            </table>
+            
+
+
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Synonyms</h3>
+        </div>
+        <div class="panel-body">
+            
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Potentially Misidentified Species</h3>
+        </div>
+        <div class="panel-body">
+            
+            <b><em>Cyprinus rubrofuscus</em></b><br/>  Koi are a domesticated, selectively bred form of the Amur Carp (<em>C. rubrofiscus</em>), now considered a separate species from <em>C. carpio</em> (Froese and Pauly 2019). Koi occasionally escape inot natrual waters.<br/> 
+            <br/> 
+        </div>
+    </div>
+</div>
+        
+<div class="tab-pane fade" id="nav-invhist" role="tabpanel" aria-labelledby="nav-invhist-tab">
+    
+    <h2 id="invhist">Invasion History</h2>
+    First Non-native North American Tidal Record: 1832<br/> First Non-native West Coast Tidal Record: 1883<br/> First Non-native East/Gulf Coast Tidal Record: 1832<br/>
+    <hr>
+    <h3>General Invasion History:</h3>
+    <p><p>Common Carp (<em>Cyprinus carpio</em>) are native to eastern Asia, and central Asia, and Eastern Europe west to the Danube basin. There are genetically distinct eastern and western clades, separated by Pleistocene glaciation (Yuan et al. 2018). Introductions to Western Europe from the Danube basin began in Roman times and continued into the 18th century. Common Carp became a prized sport-fish and food-fish in Europe, reared in ponds, and fished in local waters. Fish from Western European stocks were exported to North America, Australia, South Africa, and other countries in the 19th century. Some populations, in Thailand, Malaysia, Singapore, Fiji, and Hawaii, came originally from China (Lever 1996).<br />
+<br />
+The earliest introduction to North America was to the Hudson River in 1832 when a private individual stocked carp from France into the river (De Kay 1842). Carp introductions by private individuals became very fashionable in the 1870s and 1880s, and were the main mode of introduction in California and Oregon. However, the major introduction of Common Carp to the United States consisted of fish imported from Germany in 1877 to Druid Hill Park, Baltimore, by the United States Fish Commission (USFC). Spencer F. Baird, director of the USFC, wrote &#39;As an article of food, the better varieties, rank in Europe with the trout, and bring the same price per pound&#39; (Baird 1880). Three hundred and forty-five fish were stocked in USFC rearing ponds. In 1878, some of the fish reared at Baltimore were transferred to Washington and reared in ponds near the Washington Monument. Additional imports were made in 1879 and 1882. Fish from these stocks were introduced to Virginia by the Virginia Fish Commission in 1880 (Cole 1905; Hildebrand and Schroeder 1928; Jenkins and Burkhead 1993). USFC records indicate limited shipping of reared Carp in 1880-81 (MacDonald 1884; Smiley 1884b), but massive exports in 1882 consisting of 260,000 carp sent by rail to 298 of 301 congressional districts, as well as the Hawaiian Islands (MacDonald 1884). Most of the carp were intended for culture by private individuals, but other releases were frequent. Between 1879 and 1896 the number of carp annually distributed by the USFC varied between 12,265 and 348,784. The USFC stopped distributing Common Carp in 1896. By 1883, this fish was being caught by fishermen on the Great Lakes and the Mississippi River, and had been stocked in the Sacramento and Columbia Rivers on the West Coast (Cope 1905; Cohen and Carlton 1995).<br />
+<br />
+Common Carp were initially imported with high expectations as an easily cultured food fish, which because of its herbivorous habits, and ability to thrive in conditions not suitable for other fishes, was expected to have little impact on native fishes (Baird 1880; Cole 1905). By the 1890&#39;s, Common Carp had become widely distributed in the eastern United States and were widely held accountable for the decline of many native fish populations (Cole 1905) (see Ecological impacts.) This fish has been reported from, and is probably established in, every state except Alaska (Fuller et al. 1999).</p>
+</p>
+
+
+    <h3>North American Invasion History:</h3>
+    
+        <h4>Invasion History on the West Coast:</h4>
+        <p><p>Common Carp have been introduced to many rivers in western North America, but detailed information on estuarine populations is available mostly for the San Francisco estuary, the Columbia River, and the Fraser River, British Columbia. Early introductions in the San Francisco estuary and Columbia watersheds were made by private individuals, and then were followed by numerous stockings by the USFC, and by escapes from ponds owned by people who had received fish form the USFC. In 1872, J. A. Poppe imported five (or eight?) carp from Germany, bred them in a pond, and sold the fish to people planning to rear them. Some of these carp probably escaped to San Francisco Bay tributaries (Smith 1895; Dill and Cordone 1997). Similarly, 3000 carp escaped into the Columbia River when Captain Harlow&rsquo;s pond in Troutdale, Oregon, ruptured by a flood in 1880 (Lampman 1946). California received its first shipment of 298 carp from USFC in 1879. In 1883, the California Fish Commission stocked 600 carp in Sacramento River. By 1884 they had become so abundant that the price had fallen to 1.5 cents per pound (Shebley 1917; Smith 1895). Similarly, by 1895, they were so abundant in the Columbia River, that tons of them were being shipped, on ice, to Germany (Lampman 1917). In San Francisco Bay they were the 9th most abundant in otter trawls in 1979 to 1999 in the Delta, from tidal fresh water to Suisun Bay (mean salinities 0-14.8 psu) (Matern et al. 2002). Adults tend to migrate from brackish to fresh water for spawning (Wang 1986). In the Columbia River estuary, Common Carp were present, but uncommon, in the lower estuary (0-33 PSU, fluctuating with tide), and the upper estuary (mostly fresh) (McCabe et al. 1983). Carp were common in the tidal Willamette, near Portland (Farr and Ward 1992). Common Carp entered the Fraser River system, British Columbia, probably by way of irrigation ditches near the Washington-Canada border. They were collected in the tidal Fraser in 1939 and reached the Strait of Georgia in 1946 (Carl and Giguet 1972). In 1973 and 1994 the abundance of Common Carp in the lower Fraser River and estuary was low, but significant in biomass (Richardson 2000). There are at least two records of Common Carp in Georgia Strait from 1946 and 1967. These fish are believed to have washed out by the Fraser River plume (Carl et al. 1967; Crossman 1984; Pietsch and Orr 2015).</p>
+</p>
+     
+    
+        <h4>Invasion History on the East Coast:</h4>
+        <p><p>As noted above, most sources cite De Kay&#39;s 1842 account of the introduction of Common Carp to the Hudson River as the first record in North America. According to De Kay, Mr. Henry Robinson brought six or seven dozen carp from France in 1831-1832 and released them into ponds adjacent to the Hudson, where floods washed them into the main river (De Kay 1842). Citing the absence of specimens in New York markets in the 1870s, Cole (1905) questioned the identity of these fishes, suggesting that they may have been <em>Carassius auratus-Cyprinus carpio</em> (Goldfish- Common Carp) hybrids. However, most authors cite the 1831 date (Courtenay et al. 1984; Lever 1996) as the first introduction of Common Carp to North America. But introduction on a national scale began with the efforts of Spencer F. Baird and the United States Fish Commission (USFC), which imported 345 carp from Germany in 1877, to Druid Hill Park, Baltimore. In 1878, some of the fish reared at Baltimore were transferred to Washington. Additional imports were made in 1879 and 1882. Fish from these stocks were introduced to Virginia by the Virginia Fish Commission in 1880 (Cole 1905; Hildebrand and Schroeder 1928; Jenkins and Burkhead 1993). USFC records indicate limited shipping of reared carp in 1880-81 (MacDonald 1884; Smiley 1884b), but massive exports continued from 1882 to 1896 (Cole 1905). The USFC and state agencies stocked many of the major estuaries on the East and Gulf Coasts, while others were colonized by fish that escaped from private ponds. Extensive populations of Common Carp, probably all introduced in the 1880s, are reported from many Northeastern estuaries: Merrymeeting Bay (tidal Kennebec-Androscoggin Rivers), Maine (Kennebec Fisheries Council 1996), the Merrimack River (Peterson 1975), and Charles River (Hartel 2002). Connecticut River (Hartford-Old Saybrook, Whitworth 1968; Marcy 1976); Hudson River (Troy-New York City, Smith and Lake 1990; Daniels et al. 2005; Waldman et al. 2006); Delaware River (Trenton to Chesapeake &amp; Delaware Canal (Fowler 1911; Horwitz 1986; Raasch and Altemus 1991; Weisberg et al. 1996); Chesapeake Bay mainstem (Susquehanna River to Chesapeake Beach, Potomac River (Chain Bridge to Breton Bay), Rappahannock, York, and James Rivers, (Hildebrand and Schroeder 1928; Lippson et al. 1979; Murdy et al. 1997; Starnes et al. 2011; Kraus and Jones 2012). Most of these records are from tidal fresh and oligohaline-to-mesohaline brackish waters, but a few appear to be strays into marine waters (Bronx River and Glen Cove Creek, leading into Long Island Sound; Carmans and Connetquot Rivers, inlets of Great South Bay (Briggs and Waldman 2002), and &#39;near the Chesapeake Bay mouth (Murdy et al. 1997).<br />
+<br />
+Along the Southeastern coast of the US, it is likely that many of the Common Carp populations were introduced from 1880 to 1896, but there are fewer early records. USFC records indicate that Common Carp were shipped to all the southern states, but reported earliest records from Southeastern and Gulf estuaries range from 1923 to 2012, and the records are more scattered, suggesting that the Common Carp was slower and less successful in colonizing those estuaries. Common Carp are localized and rare on the Florida Peninsula, though they are established in the rivers on the Panhandle (Courtenay 1997; USGS Nonindigenous Aquatic Species Program 2018). Common Carp have successfully colonized many tropical regions, so their limited success in southeastern North America is puzzling.<br />
+<br />
+At the same time that the USFC was stocking Common Carp in the US, Canada was also stocking Common Carp near the Great Lakes (Emery 1985). One early release occurred in the 1890s, on the Ontario side, from a pond draining into Turkey Point Marsh, Lake Erie (Crossman 1984). Other releases from culture-ponds occurred in Lake Ontario in the 1890s and Lake Michigan (Crossman 1984; Mills et al. 1993; Duggan et al. 2003). By 1920-25, Common Carp were found in Lake Huron, and by 1953, on the Nipigon River, Ontario. Lake Superior (Crossman 1984; USGS Nonindigenous Aquatic Species Program 2018). Common Carp also spread down the St. Lawrence River, reaching the estuary and Quebec City around 1910 (Crossman 1984). As noted above, this fish is abundant from the Great Lakes to the Gulf, and from the Appalachians to the Rockies in the Mississippi-Missouri river systems. It has also spread north into the Arctic Ocean drainage, reaching Lake Winnipeg by 1950, and spreading north along the Nelson and Churchill River, reaching a generating station at 56 30 north, about 150-200 km from the rivers&#39; entrances into Hudson Bay by 2000. The Common Carp is expected to eventually colonize the estuaries on the edge of Hudson Bay (Badiou and Goldsborough 2006).<br />
+&nbsp;</p>
+</p>
+     
+     
+    
+        <h4>Invasion History in Hawaii:</h4>
+        <p><p>Common Carp were introduced to Hawaii before 1900. There were apparently both shipments of fish of the European stock from the US Fish Commission (MacDonald 1884) and by Asian immigrants before 1900 (Maciolek 1984). They are largely confined to reservoirs (Brock 1960).</p>
+</p>
+     
+    
+        <h4>Invasion History Elsewhere in the World:</h4>
+        <p><p>Common Carp have been introduced to 120 countries, and are established in 91 in temperate and tropical regions of the world (Lever 1996; Food and Agricultural Organization 2018). Our focus is on its invasions in estuarine regions. In Europe, Common Carp were native to the Caspian Sea and estuaries of the Black Sea (Lever 1998; Yuan et al. 2018). They have been introduced to the eastern Baltic Sea, including the Gulf of Finland, the Curonian Lagoon, the Gulf of Riga, and the Vistula Lagoon, as early as 1400 (Lever 1996; Olenin and Leppakoski 2018), but are apparently rare (Helsinki Commission 2006). Common Carp occur in coastal lakes, lagoons and estuaries along the European Atlantic and Mediterranean coasts, where they can have ecological impacts (Crivelli 1983; Fernandez-Delgado 1990; Crivelli 1995). In South America, Common Carp are established in Patos and Mirim lagoons, Brazil-Uruguay, escaped from aquaculture ponds nearby. Common Carp were first introduced to Brazil in 1882, but were first collected in the lagoon in 2010 (Troca et al. 2012). In South Africa, where Common Carp were first introduced in 1859, they were collected in the Great Kei estuary, Natal Proivince (Plumstead et al. 1985, cited by Lever 1996) and in the in the Wilderness Lakes lagoon system (Olds et al. 2011). In Australia, Common Carp were introduced in 1872, and have colonized major river systems, including brackish estuaries and coastal lakes in southeast Australia (Lever 1996; Koehn 2004). Common Carp in estuarine systems receive attention because of the importance of these environments to fisheries, birds, and wildlife, and this fishes&#39; reputation for disturbing sediment and aquatic vegetation (Cole 1905; Crivelli 1983; Lever 1996).</p>
+</p>
+    
+
+    <hr>
+
+
+</div>
+        
+<div class="tab-pane fade" id="nav-eco" role="tabpanel" aria-labelledby="nav-eco-tab">
+
+
+    <h2 id="eco">Ecology</h2>
+    
+    <h3>General:</h3>
+    <p><p>Common Carp (Cyprinus carpio) is a large freshwater fish, which frequently enters brackish water. Males and females do not show big morphological differences. Males mature at 2-4 years (usually 3) at 178-228 mm, while females mature at 2-5 years, and 128-250 mm (Jones et al. 1978). Spawning takes place at 14-28 C, and usually in freshwater, though it has been reported at 10 PSU (Jones et al. 1978; Schofield et al. 2005). Females may carry 36000 to 2,208,000 eggs, but release them in batches of about 500 eggs at time. Spawning fish swim in schools, often in near shore open water with fins breaking the surface. The schools often break up into smaller groups of a few males and females that move into shallow vegetated areas to release milt and eggs with much splashing. Eggs are 1.2-2.0 mm diameter and adhesive, sinking and sticking to vegetation and bottom debris. They hatch in 2-5 days, into larvae 3-6 mm long. Larvae stay close to the bottom, but begin to swim more as their fins develop, they absorb the yolk sac, and they begin to feed on zooplankton. They reach juvenile stage at ~17 mm (Jones et al. 1978; Wang 1986; Moyle 2002). Common Carp live for up to 20 years in the field, and up to 47 years in captivity (Moyle 2002).<br />
+<br />
+Common Carp (Cyprinus carpio) are capable of adapting to a wide range of environmental conditions, which has led to their widespread aquaculture, stocking, and invasion of a great range of aquatic habitats. They have invaded both cold-temperate and tropical climates, and have colonized habitats with extensive winter ice-cover, as well as tolerating temperatures up to 38-43 C (Jones et al. 1978; Schofield et al. 2005). Common Carp are freshwater fish but have considerable tolerance of brackish water. Different sources give upper tolerance limits from 5 to 18 PSU (Jones et al. 1978; Schofield et al. 2005). There are occasional reports of these fish in marine waters, but these may be related to river plumes (Carl and Guiguet 1972; Murdy et al. 1997). In estuaries, spawning carp usually migrate to freshwater (Wang 1986; Murdy et al. 1997), however, spawning has been reported at 10 PSU salinity (Schofield et al. 2005). This fish is very tolerant of low oxygen, high turbidity and pollution. Its stream habitats tend to have high stream order, low gradients, and high levels of human disturbance (Schade et al. 2005). Common Carp are omnivorous. They feed by rooting in the mud for plants, seeds, roots, small invertebrates, and detritus (Moyle 2002). They often feed in shallow water and can be partially emerged to feed on plants at the water&#39;s edge (Baldwin and Peterson 2003). Young carp are vulnerable to predators, but adults are too large for most animal predators.</p>
+</p>
+     
+    
+    <h3>Food:</h3>
+    <p>small benthic invertebrates, vegetation, detritus</p>
+     
+    
+    <h3>Consumers:</h3>
+    <p>predatory fishes, birds, otters, humans</p>
+     
+    
+    <h3>Competitors:</h3>
+    <p>benthivorous fishes (e.g. catastomids), waterfowl</p>
+    
+    
+  
+    <!--
+      Jina2 - create dictionary to replace codes with full words and replace inline
+    -->
+    <!-- use dictionary to replace Trophic Status codes-->
+
+
+    <h3>Trophic Status:</h3>
+     <p>Omnivore</p>
+     Omni
+    
+
+    <hr>
+     
+    <h3>Habitats</h3>
+    <table class="table table-striped">
+        
+        <tr>
+            <td>General Habitat</td><td>Fresh (nontidal) Marsh</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Grass Bed</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Coarse Woody Debris</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Swamp</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Nontidal Freshwater</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Tidal Fresh Marsh</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Unstructured Bottom</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Canals</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>Tidal Range</td><td>Subtidal</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>Vertical Habitat</td><td>Nektonic</td><td>None</td>
+        </tr>
+        
+    </table>
+    
+    <hr>
+   
+    
+    <h3>Life History</h3>
+    <p></p>
+     
+
+    <hr>
+    <h3>Tolerances and Life History Parameters</h3>  
+    <table class="table table-striped">
+        
+            <tr>
+                <td>Minimum Temperature (ºC)</td><td>0.7</td><td>Jones et al. 1978</td>
+            </tr>
+        
+            <tr>
+                <td>Maximum Temperature (ºC)</td><td>37.5</td><td>Jones et al. 1978</td>
+            </tr>
+        
+            <tr>
+                <td>Minimum Salinity (‰)</td><td>0</td><td>Jones et al. 1978</td>
+            </tr>
+        
+            <tr>
+                <td>Maximum Salinity (‰)</td><td>17.6</td><td>Jones et al. 1978</td>
+            </tr>
+        
+            <tr>
+                <td>Minimum Dissolved Oxygen (mg/l)</td><td>1</td><td>Jones et al. 1978</td>
+            </tr>
+        
+            <tr>
+                <td>Minimum pH</td><td>5.5</td><td>Jones et al. 1978; Jenkins and Burkhead 1993</td>
+            </tr>
+        
+            <tr>
+                <td>Maximum pH</td><td>9</td><td>Food and Agriculture Organization</td>
+            </tr>
+        
+            <tr>
+                <td>Minimum Reproductive Temperature</td><td>14</td><td>Jones et al. 1978</td>
+            </tr>
+        
+            <tr>
+                <td>Maximum Reproductive Temperature</td><td>28</td><td>Jones et al. 1978</td>
+            </tr>
+        
+            <tr>
+                <td>Minimum Reproductive Salinity</td><td>0</td><td>This is a freshwater fish</td>
+            </tr>
+        
+            <tr>
+                <td>Maximum Reproductive Salinity</td><td>10</td><td>Jones et al. 1978</td>
+            </tr>
+        
+            <tr>
+                <td>Minimum Length (mm)</td><td>128</td><td>Females mature at 2-5 years 128-250 mm, males at  1-4 years, 178-228 mm (Jones et al. 1978)</td>
+            </tr>
+        
+            <tr>
+                <td>Maximum Length (mm)</td><td>1,220</td><td>Jones et al. 1978</td>
+            </tr>
+        
+    </table>
+
+</div>
+        
+<div class="tab-pane fade" id="nav-imp" role="tabpanel" aria-labelledby="nav-imp-tab">
+  
+    <h2 id="imp">General Impacts</h2>
+    
+        <p>Common Carp (Cyprinus carpio) are highly regarded in parts of Asia and Europe as a food and sport fish, in part because of their hardiness and ease of culture. However, outside their native and early historical range, they have not been popular for food or sport, and have been negatively viewed for their negative impacts on aquatic environments. Common Carp are listed by the Invasive Species Specialist Group of the World Conservation Union (IUCN) as one of the &#39;100 worst invasive species&#39; and now are among the most widespread fishes in the world (Invasive Species Specialist Group 2018). Fisheries management agencies in North America, Australia, and elsewhere are testing new technologies for control of Common Carp, including acoustic tracking, viruses, and genetic methods (gene drives) (Koehn 2004; Escobar et al. 2018; Hayes et al. 2018; Thresher et al. 2018)<br />
+<br />
+Economic Impacts<br />
+<br />
+Fisheries- Common Carp (<em>Cyprinus carpio</em>) are an important food fish in Asia, and were widely adopted in Western Europe after its introduction by the Romans. They were commonly reared in ponds and were a popular sport fish, praised by Izak Walton in the &#39;Compleat Angler&#39;. European colonists spread the Common Carp to many of the colonized countries, but they were rarely as popular as proponents expected (Lever 1996).<br />
+<br />
+Common Carp were introduced to the United States with high hopes of economic benefits as an aquaculture, sport, and commercial fish (Baird 1880; Creveling 1881). But within twenty years of their introduction they were implicated in widespread fisheries declines (Cole 1905; Smith 1907). The effects on native fishes and habitat are hard to quantify, however, because the introduction took place at a time of widespread human-caused habitat degradation (Cole 1905; Hildebrand and Schroeder 1928). Even with the negative impacts, significant local carp fisheries did develop in the Mississippi Valley and elsewhere (Smith 1907; Hildebrand and Schroeder 1928; Mills et al. 1993). There are still limited sport fisheries with hook-and-line, and sometimes bow-and arrow. Common Carp are, nonetheless, generally considered a deleterious introduction (Courtenay et al. 1984; Taylor et al. 1984).<br />
+<br />
+Ecological Impacts<br />
+<br />
+Within 20 years of their introduction, Common Carp were seen as adversely effecting native fishes and fisheries (Cole 1905; Smith 1907). Adverse effects of Common Carp seem much greater in North American than in European waters (Crivelli 1983). Common Carp biomasses in American waters average 3X higher (frequently 10X) than in European waters, and the average weight of individuals is larger (~2X) in American waters. Possible reasons for this difference may include higher spring temperatures and less effective predator control in North America (Crivelli 1988). But as Hildebrand and Schroeder (1928) noted much of the observed decline of native fishes in Chesapeake Bay, which had been blamed on the carp, was actually due to human-caused habitat degradation; and was paralleled in marine waters, where no fish species were introduced.<br />
+<br />
+The impacts of Common Carp introductions on aquatic ecosystems appear to be complex, since as benthically feeding omnivores, they can affect animal and plant populations through direct herbivory or predation, or indirectly through bioturbation and food-web effects. Consequently, the effects of early carp-removal experiments were difficult to interpret (Gerking 1950; Taylor et al. 1984). Controlled experiments in small ponds or pools (Gallo and Drenner 1994; King et al. 1997; Robertson et al. 1997) provide a means of elucidating some of these interactions. Vilizzi et al. (2018) reviewed 373 experimental and field assessments on the effect of Common Carp on ecosystems, on scales ranging from aquaria to lakes. Assessments of Common Carp impacts are more likely in places where the carp are perceived as high-risk, in North America and Australia, and less likely in Europe, where carp are seen as naturalized and low risk. They tested ten hypotheses and found experimental or field support for these carp effects: 1) Increased turbidity; 2) Increased dissolved nitrogen; 3) Increased dissolved phosphorus; 4) Increased phytoplankton; 5) Decreased submerged vegetation; 6) Decreased abundance of benthic invertebrates; 7) Decreased amphibian abundance; 8) Decreased fish abundance. They did not find support for carp-related impacts on zooplankton or waterfowl abundance. Impacts of Common Carp are dependent on biomass, but it is difficult to define a critical biomass where different impacts occur, based on laboratory experiments or field observations (Vilizzi et al. 2018).<br />
+<br />
+Competition- The diet of Common Carp overlaps that of many native fishes, especially suckers and catfish, although they are much more herbivorous (Jenkins and Burkhead 1993; Taylor et al. 1984). The importance of competition with native fishes is unknown.<br />
+<br />
+Predation - Common Carp were once thought to eat the eggs of other species, but little evidence was found for this (Cole 1905). Fish eggs are usually a rare component in the Common Carp&#39;s stomach contents (Cole 1905; Taylor et al. 1984). However, carp was found to be eating eggs of the endangered native Razorback Sucker (Xyrauchen texanus) in Lake Mead, Nevada (Taylor et al. 1984). Common Carp eat a wide range of mollusks including gastropods and bivalves, but seem to select species with thin shells (Stein et al. 1975).<br />
+<br />
+Herbivory- Common Carp consume vegetation directly and also uproot it in the course of digging for animal prey (Cole 1905; Stevenson and Confer 1978; Taylor et al. 1984). Removal and enclosure experiments indicate that Carp adversely affect vegetation, though the relative importance of herbivory, uprooting, and bioturbation are not known (Taylor et al. 1984). In the Camargue, France, Carp did not feed on living vegetation but did consume a high percentage of seeds (Crivelli 1988) In Chesapeake Bay, &#39;almost 5,000 ha of aquatics were eliminated by Common Carp in the late 1950&#39;s on the Susquehanna Flats&#39; (Stevenson and Confer 1978).<br />
+<br />
+Bioturbation- Common Carp are well-known for roiling the water and increasing turbidity (Cole 1905). The importance of this effect is hard to separate from the carp&#39;s more direct effects on vegetation (Taylor et al. 1984). Crivelli (1983) found that in the Camargue, France, the chief effect was uprooting and tearing of aquatic vegetation, and that this effect was strongly proportional to the carp&#39;s biomass. So much of the turbidity in Chesapeake Bay is derived from terrigenous silt and detritus, and phytoplankton blooms that the role of the Common Carp in turbidity is likely to be very local. However, in shallow inlets of the Chesapeake turbidity due to carp feeding can reduce Secchi disk depths to 7.5 cm (Stevenson and Confer 1978). Similar cases of carp-induced turbidity were observed to be affecting growth of submersed vegetation in the Back Bay National Wildlife Refuge, Virginia Beach, Virginia (Chamberlain 1948).<br />
+<br />
+Aside from directly increasing turbidity through bioturbation, Common Carp can affect phytoplankton, periphyton, and growth indirectly through release of nutrients from sediments. High carp biomass treatments in experiments in Australian billabongs had greater turbidity, phytoplankton biomass, rates of particle settlement, and higher sediment oxygen demand, but lower periphyton biomass. Mechanisms for these changes were not always clear, however, and sometimes appeared to differ among treatments (King et al. 1997; Robertson et al. 1990). Similar experiments in experimental ponds in Texas showed that Common Carp reduced biomass of one plant species (<em>Najas guadalupensis</em>- Common Water-Nymph) and reduced diversity of submersed vegetation, but turbidity effects were influenced by the biomass of one introduced plant species (<em>Myriophyllum spicatum</em>- <em>Eurasian Watermilfoil</em>) (Gallo and Drenner 1994).<br />
+<br />
+Parasite/Predator Vector- Goldfish (<em>Carassius auratus</em>) and Common Carp (<em>Cyprinus carpio</em>) have been significant as native hosts of several Asian parasites which have spread to native North American fishes and to fishes of other continents. Introductions of Carp and Goldfish have brought the parasitic copepod Lernaea cyprinacea to every continent except Antarctica. L. cyprinacea has been found on 100+ species of fishes (Hoffman 1967). Chinook Salmon (<em>Oncorhychus tshawytscha</em>) in the Willamette River, Oregon (Uzman and Rayner 1958), and in the San Francisco estuary Delta, on four native species (Hardhead, Mylopharodon conocephalus; <em>Orthodon microlepidotus</em>, Sacramento Blackfish; <em>Pogonichthys macrolepidotus</em>; Sacramento Pike-Minnow, <em>Ptylocheilus grandis</em>,), and a non-native, White Catfish, <em>Ameiurus catus</em> (Hensley and Nahhas 1975). It was found on Channel Catfish (<em>Ictalurus punctatus</em>) in the South Carolina coastal zone (Lawler 1978).</p>
+
+    
+    <hr>
+
+
+  
+        
+        <h2>Regional Impacts</h3>
+          <table id="reg_imp_table" class="table table-striped">
+            <thead>
+              <tr>
+                <th>Bioregion</th><th colspan=2>Region Name</th><th>Impact Type</th><th colspan=2>Impact Description</th>
+              </tr>
+            </thead>
+            <tbody>
+            
+            <tr>
+                <td>M130</td><td colspan=2>Chesapeake Bay</td><td>Ecological Impact</td><td colspan=2>Herbivory</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Herbivory- Common Carp eat and uproot introduced plant species such as <i>Hydrilla verticillata</i> (Hydrilla), <i>Myriophyllum spicatum</i> (Eurasian Watermilfoil), <i>Egeria densa</i> (Brazilian Waterweed), <i>Potamogeton crispus</i> (Curly Pondweed), and <i>Najas minor</i> (Eurasian Water-Nymph).  Carp appeared to be controlling plant biomass (Cole 1905; Stevenson and Confer 1978; Taylor et al. 1984).  Removal and enclosure experiments indicate that carp adversely affect vegetation, though the relative importance of herbivory, uprooting, and bioturbation are not known (Taylor et al. 1984).  In the Camargue, France, carp did not feed on living vegetation but did consume a high percentage of seeds (Crivelli 1988)   In Chesapeake Bay, 'almost 5,000 ha of aquatics were eliminated by carp in the late 1950's on the Susquehanna Flats' (Stevenson and Confer 1978).</td>
+            </tr>
+            
+            <tr>
+                <td>M130</td><td colspan=2>Chesapeake Bay</td><td>Ecological Impact</td><td colspan=2>Bioturbation</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Bioturbation- Common Carp are well-known for roiling the water and increasing turbidity (Cole 1905).  So much of the turbidity in Chesapeake Bay is derived from terrigenous silt and detritus, and phytoplankton blooms that the role of <i>C. carpio</i> in turbidity is likely to be very local. However, in shallow inlets of the Chesapeake turbidity due to carp feeding can reduce Secchi disk depths to 7.5 cm (Stevenson and Confer 1978).</td>
+            </tr>
+            
+            <tr>
+                <td>M130</td><td colspan=2>Chesapeake Bay</td><td>Economic Impact</td><td colspan=2>Fisheries</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Fisheries - 'In the markets of Chesapeake Bay and elsewhere, it is considered an inferior food fish', but supported a small local fishery (Hildebrand and Schroeder 1928) and still does, appearing in local markets (Hines, personal observation).  <i>Cyprinus carpio</i> is not highly regarded as a sport fish (Jenkins and Burkhead 1993).</td>
+            </tr>
+            
+            <tr>
+                <td>S010</td><td colspan=2>Albemarle Sound</td><td>Ecological Impact</td><td colspan=2>Bioturbation</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Common Carp-induced turbidity were observed to be affecting growth of submersed vegetation in the Back Bay National Wildlife Refuge, Virginia Beach, VA (Chamberlain 1948).</td>
+            </tr>
+            
+            <tr>
+                <td>P090</td><td colspan=2>San Francisco Bay</td><td>Ecological Impact</td><td colspan=2>Herbivory</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Early anecdotal observations indicated that carp rapidly consumed or uprooted submerged vegetation (Water-Celery, <i>Vallisneria americana</i>) in the Sacramento Delta, eliminating a major food for waterfwel (Smith 1895; Dill and Cordone 1997).</td>
+            </tr>
+            
+            <tr>
+                <td>P090</td><td colspan=2>San Francisco Bay</td><td>Ecological Impact</td><td colspan=2>Bioturbation</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Carp extensively dug up the sediment, muddying the waters, and potentially degradeng the habitat for other fishes (Smith 1896; Dill and Cordone  1997).</td>
+            </tr>
+            
+            <tr>
+                <td>P090</td><td colspan=2>San Francisco Bay</td><td>Economic Impact</td><td colspan=2>Fisheries</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Carp have and continue to support a small commercial fishery in the Delta, and are consumed by European and Asian immigrants (Smith 1896; Dill and Cordone 1997).</td>
+            </tr>
+            
+            <tr>
+                <td>P260</td><td colspan=2>Columbia River</td><td>Ecological Impact</td><td colspan=2>Predation</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Common Carp do consume fish eggs, and have been documented to eat eggs of White Sturgeon (<i>Acipenser transmontanus</i>) (Sytsma et al. 2004).</td>
+            </tr>
+            
+            <tr>
+                <td>P260</td><td colspan=2>Columbia River</td><td>Economic Impact</td><td colspan=2>Fisheries</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>At times, Common Carp were so abundant in the Columbia River that they were sold as fertilizer (Lampman 1946).  They support a small commercial and sport fishery (Sytsma et al. 2004).</td>
+            </tr>
+            
+            <tr>
+                <td>CA</td><td colspan=2>California</td><td>Ecological Impact</td><td colspan=2>Bioturbation</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6><p>Carp extensively dug up the sediment, muddying the waters, and potentially degradng the habitat for other fishes (Smith 1896; Dill and Cordone 1997).</p>
+</td>
+            </tr>
+            
+            <tr>
+                <td>CA</td><td colspan=2>California</td><td>Ecological Impact</td><td colspan=2>Herbivory</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Early anecdotal observations indicated that carp rapidly consumed or uprooted submerged vegetation (Water-Celery, <i>Vallisneria americana</i>) in the Sacramento Delta, eliminating a major food for waterfwel (Smith 1895; Dill and Cordone 1997).</td>
+            </tr>
+            
+            <tr>
+                <td>CA</td><td colspan=2>California</td><td>Economic Impact</td><td colspan=2>Fisheries</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6>Carp have and continue to support a small commercial fishery in the Delta, and are consumed by European and Asian immigrants (Smith 1896; Dill and Cordone 1997).</td>
+            </tr>
+            
+            <tr>
+                <td>OR</td><td colspan=2>Oregon</td><td>Ecological Impact</td><td colspan=2>Predation</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6><p>Common Carp do consume fish eggs, and have been documented to eat eggs of White Sturgeon (<em>Acipenser transmontanus</em>) (Sytsma et al. 2004).</p>
+</td>
+            </tr>
+            
+            <tr>
+                <td>OR</td><td colspan=2>Oregon</td><td>Economic Impact</td><td colspan=2>Fisheries</td>
+            </tr>
+            <tr></tr>
+            </tr>
+                <td colspan=6><p>At times, Common Carp were so abundant in the Columbia River that they were sold as fertilizer (Lampman 1946). They support a small commercial and sport fishery (Sytsma et al. 2004).</p>
+</td>
+            </tr>
+            
+            </tbody>
+          </table>
+        
+ 
+</div>
+
+
+        
+<div class="tab-pane fade" id="nav-ref" role="tabpanel" aria-labelledby="nav-ref-tab">
+  
+    <h2 id="ref">References</h2>
+    
+      
+      
+      
+      
+        <b>Academy of Natural Sciences of Philadelphia</b> 1998 Ichthyological Collection Catalog. &lt;missing URL&gt;<br/><br/>
+      
+      
+      <br><br>
+    
+      
+        <b>Alexander, Mhairi E.; Dick, Jaimie T. A.; Weyl, Olaf L. F.; Robinson, Tamara B. Richardson, David M.</b> (2014) <u>Existing and emerging high impact invasive species are characterized by higher functional responses than natives</u>, <em>Biology Letters</em> 10(published onlin): 20130946 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Badiou, Pascal H. J.; Goldsborough, L. Gordon</b> (2006) <u>Northern range expansion and invasion by the Common Carp, <i>Cyprinus carpio</i>, of the Churchill River system in Manitoba</u>, <em>Canadian Field-Naturalist</em> 120: 83-86 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Baird, Spencer F.</b> (1880) <u>Part IV.  A. Inquiry into the decrease of food-fishes.</u>, In: (Eds.) Report of the Commissioner,  United States Commission of Fish and Fisheries for 1878. , Washington, D.C.. Pp. 45-57
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Bajer, Przemyslaw G.; Sorensen, Peter W.</b> (2010) <u>Recruitment and abundance of an invasive fish, the common carp, is driven by its propensity to invade and reproduce in basins that experience winter-time hypoxia in interconnected lakes</u>, <em>Biological Invasions</em> 12: 1101-1112 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Baldwin, Andrew H.; Pendleton, Frank N.</b> (2003) <u>Interactive effects of animal disturbance and elevation on vegetation of a tidal freshwater marsh.</u>, <em>Estuaries</em> 26(4A): 905-915 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Bean, Tarleton H.</b> (1893) <u>The fishes of Pennsylvania</u>, In: (Eds.) . , Harrisburg PA. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Bernardi, G.; Fernandez-Delgado, C.; Gomez-Chiarri; Powers, D. A.</b> (1995) <u>Origin of a Spanish population of <i>Fundulus heteroclitus</i> inferred by cytochrome b sequence analysis.</u>, <em>Journal of Fish Biology</em> 47: 737-740 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Borawa, J. C.; Mullis, A. W.; Kerby, J. H.; Huish, M. T.</b> (1978) <u>Comparison of fish population data collected from Currituck Sound, North Carolina, before and after infestation by Eurasian watermilfoil</u>, <em>Journal of the Elisha Mitchell Scientific Society</em> &lt;missing volume&gt;: 111 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Borawa, James C.; Kerby, J. Howard; Huish, Melvin T., Mullis, Anthony W.</b> (1978) <u>Currituck Sound fish populations before and after infestation with Eurasian water-milfoil</u>, <em>Proceedings of the Annual Conference of the Southeast Association of Fish and Wildlife Agencies</em> 32: 520-528 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Boward, Daniel M., Dail, Helen M., Kazyak, Paul F.</b> (1997) <u>Chester River Basin: Environmental Assessment Stream Conditions</u>,  Maryland Department of Natural Resources, Annapolis. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Boward, Daniel M.; Dail, Helen M.; Kazyak, Paul F.</b> (1997) <u>Gunpowder River Basin:  Environmental Assessment of Stream Conditions</u>, In: (Eds.) . , Annapolis. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Boward, Daniel; Christmas, John; Randle, Douglas; Kazyak, Paul</b> (1997) <u>Elk River Basin: Environmental Assessment of Stream Conditions</u>,  Maryland Department of Natural Resources, Annapolis. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Boward, Daniel; Dail, Helen M.; Kazyak, Paul F.</b> (1997) <u>&lt;missing title&gt;</u>,  Maryland Department of Natural Resources, Annapolis. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Briggs, Philip T.; Waldman, John R.</b> (2002) <u>Annotated list of fishes reported from the marine waters of New York</u>, <em>Northeastern Naturalist</em> 9(1): 47-80 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Brock, Vernon E.</b> (1960) <u>The introduction of aquatic animals into Hawaiian waters</u>, <em>Internationale Revue der Gesamten Hydrobiologie</em> 45(4): 463-480 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Campbell, Marnie L] ; Hewitt, Chad L.[ Miles, Joel</b> (2016) <u>Marine pests in paradise: capacity building, awareness raising and preliminary
+introduced species port survey results in the Republic of Palau</u>, <em>Biological Invasions</em> 7(4): 351-363 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Carey, Michael P.; Wahl, David H.</b> (2010) <u>Native fish diversity alters the effects of an invasive species on food webs</u>, <em>Ecology</em> 91(10): 2965-2974 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Carl, G. Clifford, Clemens, W. A., Lindsey, C. C.</b> (1967) <u>Fresh-water fishes of British Columbia</u>, <em>British Columbia Provincial Museum: Department of Recreation and Conservation: Handbook</em> 5: 1-192 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Carl, G. Clifford; Guiguet, C. J.</b> (1972) <u>Alien animals in British Columbia.</u>, <em>British Columbia Provincial Museum: Department of Recreation and Conservation: Handbook</em> 14: 1-102 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Carlander, Kenneth D.</b> (1969) <u>Handbook of freshwater fishery biology. Vol. 1.</u>, In: (Eds.) . , Ames. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Chamberlain, E. B., Jr.</b> (1948) <u>Ecological factors influencing the growth and management of certain waterfowl food plants on Back Bay Nation Wildlife Refuge</u>, <em>Transactions of the North American Wildlife  Conference</em> 13: 347-355 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Chávez-Sánchez, Tonatiuh; Piñón-Gimate, Alejandra;   Melton, James T. III; López-Bautista,  Juan Manuel; Casas-Valdez, Margarita </b> (2019) <u>First report, along with nomenclature adjustments, of Ulva ohnoi, U. tepida and U. torta (Ulvaceae, Ulvales, Chlorophyta) from northwestern Mexico</u>, <em>Botanica Marina</em> 62(2): 113-123 
+      
+      
+      
+      
+      
+          <br>
+          
+          
+              <a href="https://doi.org/10.1515/bot-2018-0007" target="_blank">https://doi.org/10.1515/bot-2018-0007</a>
+          
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Christmas, John and 7 authors.</b> (1998) <u>History, management, and status of introduced fishes in the Chesapeake Bay basin.</u>, In: Therres, Glenn D.(Eds.) Conservation of Biological Diversity: A Key to Restoration of  the Chesapeake Bay and Beyond.. , Annapolis. Pp. 97-116
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Cohen, Andrew N.; Carlton, James T.</b> (1995) <u>Nonindigenous aquatic species in a United States estuary: a case study of the biological invasions of the San Francisco Bay and Delta</u>,  U.S. Fish and Wildlife Service and National Sea Grant College Program (Connecticut Sea Grant), Washington DC, Silver Spring MD.. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Cole, Leon J.</b> (1905) <u>The German carp in the United States</u>, In: (Eds.) Report of the Bureau of Fisheries for 1904, pp. 525-641. , Washington, D. C.. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>Cook Inlet Regional Citizen&#39;s Council</b> 2023 Seaweeds of Alaska. https://www.seaweedsofalaska.com/species.asp?SeaweedID=46<br/><br/>
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Cope, Edward Drinker</b> (1879) <u>The Fishes of Pennsylvania</u>, In: (Eds.) Report of the State Commisioners of Fisheries. , Harrisburg. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Copp, G. H. and 20 other authors</b> (2005) <u>To be, or not to be, a non-native frestwater fish?</u>, <em>Journal of Applied Ichthyology</em> 21: 242-262 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Courtenay, Walter R.</b> (1997) <u>Nonindigenous fishes.</u>, In: Simberloff, D., Schmitz, D. C., and Brown, T. C.(Eds.) Strangers in Paradise: Impact and Management of Nonindigenous Species in Florida. , Washington, D. C.. Pp. 109-122
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Courtenay, Walter R., Jr.; Hensley, Dannie A.; Taylor, Jeffrey; McCann, James A.</b> (1984) <u>Distribution of exotic fishes in the continental United States.</u>, In: Courtenay, Walter R., and Stauffer, Jay R.(Eds.) Distribution, Biology, and Management of Exotic Fishes. , Baltimore, MD. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Creveling, John P.</b> (1881) <u>Report of the State Commisioners of Fisheries.</u>, In: (Eds.) . , Harrisburg, PA. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Crivelli, Alain J.</b> (1983) <u>The destruction of aquatic vegetation by carp.</u>, <em>Hydrobiologia</em> 106: 37-41 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Crossman, E. J.</b> (1984) <u>Introduction of exotic fishes into Canada.</u>, In: Courtenay, W. R., Jr. and Stauffer, J.  R., Jr.(Eds.) Distribution, Biology, and Management of Exotic Fishes. , Baltimore, MD. Pp. 78-101
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Dahlberg, Michael D., Scott, Donald C.</b> (1971) <u>Introductions of freshwater fishes in Georgia</u>, <em>Bulletin of the Georgia Academy of Science</em> 29(245-252): &lt;missing location&gt; 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Daniels, Robert A.; Limburg,  Karin E.; Schmidt, Robert E; Strayer,  David L.;  Chambers, R. Christopher</b> (2005) <u>Changes in fish assemblages in the tidal Hudson river, New York.</u>, <em>American Fisheries Society Symposium</em> 45: 471-503 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Dill, William A.; Cordone, Almo J.</b> (1997) <u>History and status of introduced fishes in California, 1871-1996</u>, <em>California Department of Fish and Game Fish Bulletin</em> 178: 1-414 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Duggan, Ian C.;   Bailey, Sarah A.; Colauttii,  Robert I.;  Gray, Derek K.;  Makarewicz; Joseph C.;  Hugh J. MacIsaac</b> (2003) <u>State of Lake Ontario (SOLO): Past, Present and Future</u>,  Aquatic Ecosystem Health and Management Society, Burlington, Ontario. Pp. 1-17
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Edwards, Robert J.; Contreras-Balderas, Salvador</b> (1991) <u>Historical changes in the ichthyofauna of the lower Rio Grande (Rio Bravo del Norte), Texas and Mexico</u>, <em>Southwestern Naturalist</em> 36(2): 201-212 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Emery, Lee</b> (1985) <u>Review of fish species introduced into the Great Lakes, 1819-1974.</u>, <em>Great Lakes Fisheries Commission</em> 45: 1-31 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Farr, Ruth A., Ward, David L.</b> (1992) <u>Fishes of the lower Willamette River, near Portland, Oregon</u>, <em>Northwest Science</em> 67(1): 16-22 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Fernandez-Delgado, C.</b> (1989) <u>Life-history patterns of the salt-marsh killifish (<i>Fundulus heteroclitus</i>) introduced in the estuary of the Guadalquivir River (southwest Spain)</u>, <em>Estuarine, Coastal and Shelf Science</em> 29: 573-582 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Forsyth, David M.; Koehn, John D.; MacKenzie, Darryl I.;  Stuart, Ivor G.</b> (2012) <u>Population dynamics of invading freshwater fish: common carp (<i>Cyprinus carpio</i>) in the Murray-Darling Basin,  Australia</u>, <em>Biological Invasions</em> published online: &lt;missing location&gt; 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Fowler, Henry W.</b> (1920) <u>A list of the fishes of New Jersey</u>, <em>Proceedings of the Biological Society of Washington</em> 33: 139-170 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Fowler, Henry W.</b> (1952) <u>A list of the fishes of New Jersey, with off-shore species</u>, <em>Proceedings of the Academy of Natural Sciences of Philadelphia</em> 104: 89-151 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Froufe, E.; Magyary, I.; Lehoczky, I.; Weiss, S.</b> (2002) <u>DNA sequence data supports an Asian ancestry and single introduction of the common carp into the Danube basin</u>, <em>Journal of Fish Biology</em> 61: 301-304 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Fuller, Pam. L.; Nico, Leo; Williams, J. D.</b> (1999) <u>Nonindigenous fishes introduced into inland waters of the United States</u>,  American Fisheries Society, Bethesda MD. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Gallo, Kirsten, Drenner, Ray</b> (1994) <u>Ecological impacts between carp, macrophytes, and the water column</u>, <em>Bulletin of the Ecological Society of America</em> 75(2): 73-74 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Gerking, Shelby D.</b> (1950) <u>A carp removal experiment at Oliver Lake, Indiana</u>, <em>Investigations of Indiana Lakes and Streams</em> 3(10): 373-388 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Grabowska, Joanna;  Kotusz, Jan; Witkowski, Andrzej</b> (2010) <u>Alien invasive fish species in Polish waters: an overview</u>, <em>Folia Zoologica</em> 73: 73-85 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Gutierre, Silvia Maria Millan; Vitule, Jean Ricardo Simoes; Freire, Carolina Arruda; Prodocimo, Viviane</b> (2014) <u>Physiological tools to predict invasiveness and spread via estuarine bridges: tolerance of Brazilian native and worldwide introduced freshwater fishes to increased salinity</u>, <em>Marine and Freshwater  Research</em> 65: 425-436 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>Hartel, Karsten E.; Halliwell, David B.; Launer, Alan E.</b> 1996 An annotated working list of the inland fishes of Massachusetts. &lt;missing URL&gt;<br/><br/>
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Hartel, Karsten E.; Halliwell, David B.; Launer, Alan E.</b> (2002) <u>Inland Fishes of Massachusetts</u>,  Massachusetts Audubon Society, Lincoln MA. Pp. 328 pp.
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Hastings, Robert W.; Turner, David A.; Thomas, R. Glen</b> (1987) <u>The fish fauna of Lake Maurepas, an oligohaline paet of the Lake Pontchartrain estuary</u>, <em>Northeast Gulf Science</em> 9(2): 89-98 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Hayes, Keith R.; Leung, Brian; Thresher, Ronald; Dambacher, Jeffrey M.; Hosack,  Geoffrey R.</b> (2013) <u>Meeting the challenge of quantitative risk assessment for genetic control techniques: a framework and some methods applied to the common Carp (<i>Cyprinus carpio</i>) in Australia</u>, <em>Biological Invasions</em> published online: &lt;missing location&gt; 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Hensley, Gary H., Nahhas, F.M.</b> (1975) <u>Parasites of fishes from the Sacramento-San Joaquin Delta, California.</u>, <em>California Fish and Game</em> 61(4): 201-208 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Hicks, Brendan J.; Ling, Nicholas; Daniel, Adam J.</b> (2012) <u>Francis, Robert A.</u>,  Earthscan, New York, NY. Pp. 247-260
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Hildebrand, Samuel F.; Schroeder, William C.</b> (1928) <u>Fishes of Chesapeake Bay</u>, <em>Unites States Bureau of Bisheries Bulletin</em> 53(Pt. 1): 1-388 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Hoffman, Glenn L.</b> (1967) <u>Parasites of North American freshwater fishes</u>, In: (Eds.) . , Berkeley. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Horoszewicz, Lidia</b> (1973) <u>Lethal and 'disturbing' temperatures in some fish species from lakes with normal and artificially elevated temperature</u>, <em>Journal of Fish Biology</em> 5: 165-181 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Horwitz, Richard J.</b> (1986) <u>Fishes of the Delaware estuary in Pennsylvania.</u>, In: Majundar, S.K., Brenner, F. J., Rhoads, A. F.(Eds.) Endangered and Threatened Species Programs in Pennsylvania.. , Philadelphia. Pp. 177-201
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Hughes, Robert M., Gammon, James R.</b> (1987) <u>Longitudinal changes in fish assemblages and water quality in the Willamette River, Oregon</u>, <em>Transactions of the American Fisheries Society</em> 116: 196-209 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>Invasive Species Specialist Group</b> 2001-2016 100  Of The World&#39;s Worst Invasive Species. &lt;missing URL&gt;<br/><br/>
+      
+      
+      <br><br>
+    
+      
+        <b>Jackson, Michelle C.  and 5 authors</b> (2012) <u>Population-level metrics of trophic structure based on stable isotopes and their application to invasion ecology</u>, <em>None</em> 7(2): e31757 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Jacobson, Paul M.</b> (1980) <u>Studies of the Ichthyofauna of Connecticut</u>, <em>Storrs Agricultural Experiment Station. Papers</em> 82: 1-39 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Jebakumar, Jebarathnam Prince  Prakash,  and  5 authors</b> (2017) <u>The bryozoan <em>Amathia verticillata</em>(delle Chiaje, 1822) fouling harbours of the southeast coast of India: re-evaluating its status</u>, <em>BioInvasions Records</em> 6(3): 214-216 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Jenkins, Robert E.; Burkhead, Noel M.</b> (1993) <u>Freshwater Fishes of Virginia</u>,  American Fisheries Society, Bethesda, MD. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Jones, R.</b> (1982) <u>Population fluctuations and recruitment in marine populations</u>, <em>Philosophical Transactions of the Royal Society of London. Series B. Biological Sciences</em> 297: 353-368 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>Kennebec River Council</b> 1999 The Fishery Resources of the Kennebec River. &lt;missing URL&gt;<br/><br/>
+      
+      
+      <br><br>
+    
+      
+        <b>Keup, Lowell, Bayless, Jack</b> (1964) <u>Fish distribution at varying salinities in Neuse River Basin, North Carolina</u>, <em>Chesapeake Basin</em> 5(3): 119-123 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>King, A. J.; Robertson, A. I.; Healey, M. R.</b> (1997) <u>Experimental manipulations of the biomass of introduced carp (<i>Cyprinus carpio</i>) in billabongs.  I. Impacts on water column properties.</u>, <em>Marine and Freshwater Research</em> 48: 435-443 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Koehn, John D.</b> (2004) <u>Carp (Cyprinus carpio) as a powerful invader in Australia waterways.</u>, <em>Freshwater Biology</em> 49: 882-894 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Kraus, Richard T.; Jones, R. Christian</b> (2012) <u>Fish abundances in shoreline habitats and submerged aquatic vegetation in a tidal freshwater embayment of the Potomac River</u>, <em>Environmental Monitoring and Assessment</em> 184: 3341-3357 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Lampman, Ben Hur</b> (1946) <u>Coming of the Pond Fishes</u>,  Binfords & Mort, Portland, OR. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Lawler, Adrian R.</b> (1978) <u>An annotated checklist of the biota of the coastal zone of South Carolina</u>,  University of South Carolina Press, Columbia. Pp. 309-345
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Leach, Joseph H.</b> (1995) <u>Nonindigenous species in the Great Lakes: Were colonization and damage to ecosystem health predictable?</u>, <em>Journal of Aquatic Ecosystem Health</em> 4: 117-128 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Lee, David S.; Gilbert, Carter R.; Hocutt, Charles H.; Jenkins, Robert E.; McAllister, Don E.; Stauffer, Jay R.</b> (1980) <u>Atlas of North American freshwater fishes</u>,  North Carolina State Museum of Natural History, Raleigh. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Leidy, R. A.</b> (2007) <u>&lt;missing title&gt;</u>,  San Francisco Estuary Institute, Oakland. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Lippson, Alice J.; Haire, Michael S.; Holland, A. Frederick; Jacobs, Fred; Jensen, Jorgen; Moran-Johnson, R. Lynn; Polgar, Tibor T.; Richkus, William</b> (1979) <u>Environmental atlas of the Potomac Estuary</u>,  Martin Marietta Corp., Baltimore, MD. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Love, Joseph W.;  Gill, John; Newhard,  Joshua J.</b> (2008) <u>Saltwater intrusion impacts fish diversity and distribution in the Blackwater River drainage (Chesapeake bay Watershed)</u>, <em>Wetlands</em> 28(4): 967-974 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Maciolek, J. A.</b> (1984) <u>Exotic fishes in Hawaii and other islands of Oceania.</u>, In: Courtenay, W. R., Jr., and Stauffer, J.  R., Jr.(Eds.) Distribution, Biology, and Management of Exotic Fishes. , Baltimore, MD. Pp. 131-161
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Marcy, Barton C., Jr.</b> (1976) <u>Fishes of the lower Connecticut River and the effects of the Connecticut Yankee Plant</u>, <em>American Fisheries Society Monograph</em> 1: 61-113 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Massmann, William H.; Ladd, Ernest C.; McCutcheon, Henry M.</b> (1952) <u>A biological survey of the Rappahannock River, Virginia</u>, <em>Virginia Fisheries Laboratory Special Scientific Report</em> 6: 1-152 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Matern, Scott A.; Moyle, Peter; Pierce, Leslie C.</b> (2002) <u>Native and alien fishes in a California estuarine marsh:
+twenty-one years of changing assemblages</u>, <em>Transactions of the American Fisheries Society</em> 131: 797-816 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Matern, Scott; Meng, Lesa; Pierce, Leslie C.</b> (2001) <u>Native and introduced larval fishes of Suisun Marsh, California: the effects of freshwater flow.</u>, <em>Transactions of the American Fisheries Society</em> 130: 750-765 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Maurakis, Eugene G.; Woolcott, William S.</b> (1995) <u>An update of Raney's 1950 account of freshwater fishes of the James River basin</u>, <em>Virginia Journal of Science</em> 46(4): 235-247 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>McCabe, George T., Jr., Muir, William D., Emmett, Robert L., Durkin, Joseph T.</b> (1983) <u>Interrelationships between juvenile salmonids and nonsalmonid fish in the Columbia River Estuary</u>, <em>Fishery Bulletin</em> 81(4): 815-826 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>McDonald, Marshall</b> (1884) <u>Report on the distribution of carp durng the season of 1882</u>, <em>Report of the Commissioner of  Fish and Fisheries</em> &lt;missing volume&gt;: 915-942 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Meng, Lesa, Moyle, Peter B., Herbold, Bruce</b> (1994) <u>Changes in abundance and distribution of native and introduced fishes of Suisun Marsh</u>, <em>Transactions of the American Fisheries Society</em> 123: 498-507 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Menhinick, Edward F.</b> (1991) <u>The Freshwater Fishes of North Carolina</u>,  North Carolina Wildlife Resources Commission, Raleigh. Pp. 45-203
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Mills, Edward L.; Leach, Joseph H.; Carlton, James T.;  Secor, Carol L.</b> (1993) <u>Exotic species in the Great Lakes: a history of biotic crises and anthropogenic introductions.</u>, <em>Journal of Great Lakes Research</em> 19(1): 1-54 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Mills, Edward L.; Scheuerell, Mark D.; Carlton, James T.; Strayer, David</b> (1997) <u>Biological invasions in the Hudson River: an inventory and historical analysis.</u>, <em>New York State Museum Circular</em> 57: 1-51 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Moreno-Valcárcel, Raquel; Oliva-Paterna, Francisco J.; Bevilacqua, Stanislao; 
+Terlizzi, Antonio; Fernández-Delgado,  Carlos</b> (2016) <u>Long-term effects of tidal restriction on fish assemblages in east Atlantic coastal marshlands</u>, <em>Marine Ecology Progress Series</em> 543: 209-222 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Murdy, Edward O.; Birdsong, Ray S.; Musick, John A.</b> (1997) <u>Fishes of Chesapeake Bay</u>,  Smithsonian Institution Press, Washington, D.C.. Pp. 57-289
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Nowosad, Damon M.; Taylor, Eric B. T</b> (2013) <u>Habitat variation and invasive species as factors influencing the distribution of native fishes in the lower Fraser River Valley, British Columbia, with an emphasis on brassy minnow (Hybognathus hankinso</u>, <em>Canadian Journal of Fisheries and Aquatic Sciences</em> 91: 71-81 
+      
+      
+      
+      
+      
+          <br>
+          
+          
+              <a href="https://dx.doi.org/10.1139/cjz-2012-0177" target="_blank">dx.doi.org/10.1139/cjz-2012-0177</a>
+          
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>Olenin, S., Leppakoski, E.</b> 2000-2016 Inventory of Baltic Sea alien species. &lt;missing URL&gt;<br/><br/>
+      
+      
+      <br><br>
+    
+      
+        <b>Peterson, Mark S.; Slack, William T.; Brown-Peterson, Nancy J.; Mcdonald, Jennifer L.</b> (2004) <u>The reproduction in nonnative environments: establishment of Nile tilapia, <i>Oreochromis niloticus</i>, in Coastal Mississippi watersheds.</u>, <em>Copeia</em> 4: 842-849 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>Peterson, Susan Jane</b> 1975 The seasonal abundance and distribution of fish eggs, larvae, and juveniles in the Merrimack River Estuary, Massachusetts, 1974-1975. &lt;missing URL&gt;<br/><br/>
+      
+      
+      <br><br>
+    
+      
+        <b>Pietsch, Theodore W.; Orr, James W.</b> (2015) <u>Fishes of the Salish Sea: a compilation and distributional analysis</u>, <em>NOAA Professional Papers NMFS</em> 18: 1-106 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Poore, Gary C. B.</b> (1984) <u>Redefinition of <em>Munna</em> and <em>Uromunna</em> (Crustacea: Isopoda: Munnidae), with descriptions of five species from coastal Victoria</u>, <em>Proceedings of the Royal Society of Victoria</em> 96(2): 61-81 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>Poss, Stuart G.</b> 1999 Nonindigenous species in the Gulf of Mexico. &lt;missing URL&gt;<br/><br/>
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Raasch, Maynard S.</b> (1996) <u>Delaware's Freshwater and Brackish-water Fishes: A Popular Account</u>,  T.F.H. Publications, Neptune, NJ. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Raasch, Maynard S.;  Altemus, Vaughn L., Sr.</b> (1991) <u>Delaware's freshwater and brackish water fishes, a popular account </u>,  Society of Natural History of Delaware, Wilmingotn, Delaware. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Richardson, J. S. et al</b> (2000) <u>Fish Communities of the Lower Fraser River (Canada) and a 21-year contrast</u>, <em>Environmental Biology of Fishes</em> 59: 125-140 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Robertson, A. I.; Healey, M. R.; King, A. J.</b> (1997) <u>Experimental manipulations of the biomass of introduced carp (<i>Cyprinus carpio</i>) in billabongs. II. Impacts on benthic properties and processes</u>, <em>Marine and Freshwater  Research</em> 48: 445-454 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Rohde, Fred C.; Arndt, Rudolf G.; Lindquist, David G.; Parnell, James F.</b> (1994) <u>Freshwater fishes of the Carolinas, Virginia, and Delaware</u>,  Universilty of North Carolina Press, Chapel Hill NC. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Schmidt, Robert E.</b> (1986) <u>Zoogeography of the northern Appalachians.</u>, In: Hocutt, Charles H. and Wiley, E. O.(Eds.) The Zoogeography of North American Freshwater Fishes. , New York. Pp. 137-159
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Schofield, Pamela J.; Williams, James D.;  Nico,Leo G;  Fuller, Pam;  Thomas, Matthew R.</b> (2005) <u>Foreign nonindigenous carps and minnows (Cyprinidae) in the United States – A guide to their identification, distribution, and biology</u>, <em>USGS Scientific Investigations Report</em> 2005-5041: 1-89 + Appendices 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Schuchert, Peter</b> (1996) <u>The marine fauna of New Zealand: Athecate hydroids oand their medusae (Cnidara: Hydrozoa)</u>, <em>New Zealand Oceanographic Institute Memoir</em> 106: 1-159 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Schwartz, Frank J.</b> (1965) <u>Natural salinity tolerances of some freshwater fishes</u>, <em>Underwater Naturalist</em> 2(2): 13-15 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Scott, W. B.; Crossman, E. J.</b> (1973) <u>&lt;missing title&gt;</u>,  Fisheries Research Board of Canada, Ottawa. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Shebley, W. H.</b> (1917) <u>Introduction of food and game fishes into the waters of California.</u>, <em>California Fish and Game</em> 3(1): 1-12 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Silver Brook P.; Hudson, J. Michael; Lohr, Samuel C.; . Whitesel, Timothy A</b> (2017) <u>Short-term response of a coastal wetland fish assemblage to tidal regime restoration in Oregon</u>, <em>Journal of Fish and Wildlife Management</em> 8(1): 193-208 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Smiley, Charles W.</b> (1884) <u>&lt;missing title&gt;</u>,  Report of the United States Commission on Fish and Fisheries for 1882, Washington, D.C.. Pp. 943-1008
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+        <b>Smith, Barry A.</b> (1971) <u>The fishes of four low-salinity tidal tributaries of the Delaware River estuary.</u>, In: (Eds.) An Ecological Study of the Delaware River in the Vicinity of Artificial Island. , Ithaca, N.Y.. Pp. &lt;missing location&gt;
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Smith, C. Lavett</b> (1985) <u>The Inland Fishes of New York State</u>,  New York State Department of Environmental Conservation, New York. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Smith, C. Lavett, Lake, Thomas R.</b> (1990) <u>Documentation of the Hudson River fish fauna</u>, <em>American Museum Novitates</em> 2981: 1-17 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Smith, Hugh M.</b> (1895) <u>A review of the history and results of the attempts to acclimatize fish and other water animals in the Pacific states.</u>, <em>Bulletin of the U. S. Fish Commission</em> 15: 379-472 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Smith, Hugh M.</b> (1907) <u>Our fish immigrants</u>, <em>National Geographic</em> 18(6): 385-400 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Smith, Hugh M.; Bean, Barton A.</b> (1898) <u>List of fishes known to inhabit the waters of the District of Columbia and vicinity.</u>, <em>Bulletin of the U. S. Fish Commission</em> 18: 179-187 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Soares, Marcelo Oliveira Xavier, Rafael de Lima Francisco Nalu Maia Dias, Monteiro da Silva Maiara Queiroz Pinto, de Lima, Jadson Xerez, Barroso</b> (2022) <u>Alien hotspot: Benthic marine species introduced in the Brazilian semiarid coast</u>, <em>Marine Pollution Bulletin</em> 174: Published online 
+      
+      
+      
+      
+      
+          <br>
+          
+          
+              <a href="https://doi.org/10.1016/j.marpolbul.2021.113250" target="_blank">https://doi.org/10.1016/j.marpolbul.2021.113250</a>
+          
+      
+      <br><br>
+    
+      
+        <b>Sol, Sean Y.; Lomax, Daniel P. ;  Hanson; Amanda C.; Corbett, Catherine; Johnson, Lyndal L.</b> (2021) <u>Fish communities in the tidal freshwater wetlands of the Lower Columbia River</u>, <em>Northwest Science</em> 94(3-3): Published online 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Starnes, Wayne C.; Odenkirk, John; Ashton, Matthew J.</b> (2011) <u>Update and analysis of fish occurrences in the lower Potomac River drainage in the vicinity of Plummers Island, Maryland—Contribution XXXI to the natural history of Plummers Island, Maryland</u>, <em>Proceedings of the Biological Society of Washington</em> 124: 280-309 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Stein, R. A.; Kitchell, J. F.; Knezic, Borivoi</b> (1975) <u>Selective predation by carp (<i>Cyprinus carpio</i>) on benthic molluscs in Skadar Lake, Yugoslavia</u>, <em>Journal of Fish Biology</em> 7(3): 391-399 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Stevenson, J. Court; Confer, Nedra M.</b> (1978) <u>&lt;missing title&gt;</u>,  U.S. Fish and Wildlife Service, Annapolis MD. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Sytsma, Mark D.; Cordell, Jeffrey R.; Chapman, John W.; Draheim, Robyn, C.</b> (2004) <u>&lt;missing title&gt;</u>,  Center for Lakes and Reservoirs, Portland State University, Portland OR. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Taylor, Jeffrey; Courtenay, Walter R.; McCann, James A.</b> (1984) <u>Distribution, Biology, and Management of Exotic Fishes</u>,  Johns Hopkins University Press, Baltimore, MD. Pp. 323-373
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Troca, Débora Fernanda Avila; Lemos, Valéria Marques; Junior, Antônio Sérgio Varela; Vieira, João Paes</b> (2012) <u>Evidence of reproductive activity of the invasive common carp <i>Cyprinus carpio</i> (Linnaeus, 1758) (Teleostei: Cyprinidae) in a subtropical coastal system in southern Brazil</u>, <em>Bioinvasion Records</em> published online: &lt;missing location&gt; 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Uchii, Kimiko; Doi, Hideyuki; Minamoto, Toshifumi,</b> (2015) <u>A novel environmental DNA approach to quantify the cryptic invasion of non-native genotypes</u>, <em>Molecular Ecology Resources</em> Published online: &lt;missing location&gt; 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>USGS Nonindigenous Aquatic Species Program</b> 2003-2026 Nonindigenous Aquatic Species Database. https://nas.er.usgs.gov/<br/><br/>
+      
+      
+      <br><br>
+    
+      
+        <b>Wagley, Sariqa; Koofhethile, Kaegakilwe; Rangdale, Rachel</b> (2009) <u>Prevalence and potential pathogenicity of <i>Vibrio parahaemolyticus</i> in Chinese Mitten Crabs (<i>Eriocheir sinensis</i>harvested from the Thames River estuary, England</u>, <em>Journal of Food Protection</em> 72(1): 60-66 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Wakida-Kusunoki, Armando T.;  Amador-del-Ángel, Luis Enrique</b> (2011) <u>First record of the common carp <i>Cyprinus carpio</i> var. <i>communis</i> (Linnaeus, 1758) and the mirror carp <i>Cyprinus carpio</i> var. <i>specularis</i> (Lacepède, 1803) in Tabasco, Southern Gulf of Mexico</u>, <em>Aquatic Invasions</em> 6(Supplement 1): S57-S60 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Waldman, John R.; Lake,  Thomas R.; Schmidt, Robert E.</b> (2006) <u>Biodiversity and zoogeography of the fishes of the Hudson River watershed and estuary</u>, <em>American Fisheries Society Symposium</em> 51: 129-150. 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Wang, Johnson C. S.</b> (1986) <u>Fishes of the Sacramento - San Joaquin Estuary and Adjacent Waters, California: A Guide to the Early Life Histories</u>, <em>IEP Technical Reports</em> 9: 1-673 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+        <b>Wang, Johnson, C. S.; Kenehahan, Ronnie</b> (1979) <u>Fishes of the Delaware estuaries - a guide to the early life histories</u>,  EA Associates, Towson MD. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Weisberg, Stephen; Himchak, Peter; Baum, Tom; Wilson, Harold T.; Allen, Russell</b> (1996) <u>Temporal trends in abundance of fish in the tidal Delaware River</u>, <em>Estuaries</em> 19(3): 723-729 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Whitworth, Walter R.</b> (1968) <u>Freshwater fishes of Connecticut</u>, <em>Bulletin, State Geological and Natural History Survey of Connecticut</em> 101: 1-134 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Whitworth, Walter R.</b> (1996) <u>Freshwater fishes of Connecticut</u>, <em>State Geological and Natural History Survey of Connecticut</em> 114: 33-214 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Wood; Megan A.; . LipciusI, Romuald N</b> (2022) <u>Non-native red alga Gracilaria vermiculophylla compensates for seagrass loss as blue crab nursery habitat in the emerging Chesapeake Bay ecosystem</u>, <em>None</em> 17(5): e0267880. h 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Wright, Rosalind; et al.</b> (2022) <u>First direct evidence of adult European eels migrating to their breeding place in the Sargasso Sea</u>, <em>Scientific Reports</em> 3,2(25362): Published online 
+      
+      
+      
+      
+      
+          <br>
+          
+          
+              <a href="https://doi.org/10.1038/s41598-022-19248-8" target="_blank">https://doi.org/10.1038/s41598-022-19248-8</a>
+          
+      
+      <br><br>
+    
+      
+        <b>Zeng, Cong;  Tang, Yangxin; Vastrade, Martin;  Coughlan, Neil E; Zhang. Ting;  Cai, Yongjiu; Van Doninck, Karine; Li, Deliang</b> (2022) <u>Salinity appears to be the main factor shaping spatial COI diversity of Corbicula lineages within the Chinese Yangtze River Basin</u>, <em>Diversity and Distributions</em> &lt;missing volume&gt;: Published online 
+      
+      
+      
+      
+      
+          <br>
+          
+          
+              <a href="https://DOI: 10.1111/ddi.13666" target="_blank">DOI: 10.1111/ddi.13666</a>
+          
+      
+      <br><br>
+    
+      
+      
+        <b>Zingmark, Richard G.  (Ed.)</b> (1978) <u>&lt;missing title&gt;</u>,  Belle W. Baruch Institute for Marine Biology and Coastal Research, Columbia SC. Pp. &lt;missing location&gt;
+      
+      
+      
+      
+      <br><br>
+    
+    <hr>
+</div>
+
+    </div>
+    
+
+</main>
+
+<!-- set up variables for leaflet map in _distribution_map.html -->
+<script type="text/javascript">
+    var map_center = [45,-120];
+    var zoom_level = 2;
+    var min_zoom = 2;
+    var northBound = 90;
+    var southBound = -90;
+    var eastBound = 180;
+    var westBound = -180;
+    var portal = 'nemesis';
+</script>
+
+<script type="text/javascript">
+
+  var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png';
+    var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+        maxZoom: 18,
+        noWrap: true
+        });
+    var Esri_OceanBasemap = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}', {
+	    attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
+	    maxZoom: 13,
+	    noWrap: true
+        });
+
+    var ESRI_Streetmap = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community',
+        maxZoom: 19,
+        noWrap: true
+    });
+
+
+    var Esri_WorldImagery2 = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+        maxZoom: 18,
+        noWrap: true
+        });
+    var Esri_OceanBasemap2 = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
+        maxZoom: 13,
+        noWrap: true
+        });
+    var ESRI_Streetmap2 = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community',
+        maxZoom: 19,
+        noWrap: true
+    });
+
+    
+
+
+
+	var baseLayers = {
+		"ESRI Imagery": Esri_WorldImagery,
+		"ESRI Ocean": Esri_OceanBasemap, 
+        "ESRI Streetmap": ESRI_Streetmap,
+	};
+    
+    var baseLayers2 = {
+        "ESRI Imagery": Esri_WorldImagery2,
+        "ESRI Ocean": Esri_OceanBasemap2,
+        "ESRI Streetmap": ESRI_Streetmap2,
+    };
+
+
+
+
+
+
+    function getColor(d) {
+        return d > 1000 ? '#800026' :
+           d > 500  ? '#BD0026' :
+           d > 200  ? '#E31A1C' :
+           d > 100  ? '#FC4E2A' :
+           d > 50   ? '#FD8D3C' :
+           d > 20   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
+                      '#FFEDA0';
+    }
+    
+
+
+    // var reg_map = L.map('reg_map', {
+    //     center: map_center,
+    //     zoom: zoom_level,
+    //     layers: [Esri_OceanBasemap]
+    // });
+
+	// var map_center = [-1,-90];
+    // var zoom_level = 6;
+    // var min_zoom = 6;
+    // var northBound = 10;
+    // var southBound = -10;
+    // var eastBound = -80;
+    // var westBound = -100;    
+    
+       
+	var dist_map = L.map('dist_map', {
+		center: [0, 0],
+		zoom: zoom_level,
+        minZoom: min_zoom,
+        layers: [Esri_WorldImagery, Esri_OceanBasemap, ESRI_Streetmap]
+	});
+
+    var southWest = L.latLng(southBound, westBound),
+    northEast = L.latLng(northBound, eastBound);
+    var bounds = L.latLngBounds(southWest, northEast);
+
+    dist_map.setMaxBounds(bounds);
+    dist_map.on('drag', function() {
+	    dist_map.panInsideBounds(bounds, { animate: false });
+    }); 
+
+
+
+    var legend = L.control({position: 'bottomleft'});
+    legend.onAdd = function (dist_map) {
+        var div = L.DomUtil.create('div', 'info legend');
+        var labels = [''];
+        var categories = ['&nbsp;  Non-native &nbsp; ',' &nbsp; Native &nbsp;  ',' &nbsp;  Cryptogenic &nbsp; ', ' &nbsp;  Failed &nbsp;  '];
+        var colors = ['red','blue','yellow','pink'];
+        var fontcolors = ['white', 'white', 'black', 'black'];
+
+        for (var i = 0; i < categories.length; i++) {
+
+            div.innerHTML += 
+            labels.push(
+                '<span style="background-color:'+ colors[i]+ '; color: ' + fontcolors[i] + '; font-size: 20px" >' + categories[i] + '</span>' 
+                );
+
+        }
+        div.innerHTML = labels.join('<br>');
+        return div;
+    };
+    legend.addTo(dist_map);
+
+
+
+
+
+    var occs = L.layerGroup();
+     var markers = L.markerClusterGroup();
+    
+
+
+    var occ_map = L.map('occ_map', {
+        center: [10, 0],
+        zoom: zoom_level,
+        layers: [Esri_WorldImagery2, Esri_OceanBasemap2, ESRI_Streetmap2, markers]
+       });
+
+    // Invalidate map sizes when tabs become visible
+    setTimeout(function() {
+        dist_map.invalidateSize();
+        occ_map.invalidateSize();
+    }, 100);
+
+    // Also invalidate when tabs are switched
+    document.addEventListener('shown.bs.tab', function(e) {
+        if (e.target.id === 'nav-dist-tab') {
+            setTimeout(function() { dist_map.invalidateSize(); }, 50);
+        } else if (e.target.id === 'nav-occ-tab') {
+            setTimeout(function() { occ_map.invalidateSize(); }, 50);
+        }
+    });
+
+
+
+
+
+
+    var distLayerControl = L.control.layers(baseLayers, {}).addTo(dist_map);
+    L.control.layers(baseLayers2).addTo(occ_map);
+   //L.control.layers(baseLayers).addTo(reg_map);
+   
+   var NatBioRegions = "[(&#39;CASP&#39;,)]";
+   var InvBioRegions = "[(&#39;M130&#39;,), (&#39;B-IX&#39;,), (&#39;B-VIII&#39;,), (&#39;B-VII&#39;,), (&#39;P090&#39;,), (&#39;GL-II&#39;,), (&#39;GL-III&#39;,), (&#39;GL-I&#39;,), (&#39;NA-S3&#39;,), (&#39;N090&#39;,), (&#39;N150&#39;,), (&#39;N170&#39;,), (&#39;M040&#39;,), (&#39;S010&#39;,), (&#39;S020&#39;,), (&#39;S050&#39;,), (&#39;M060&#39;,), (&#39;M090&#39;,), (&#39;S060&#39;,), (&#39;S080&#39;,), (&#39;S120&#39;,), (&#39;S140&#39;,), (&#39;G100&#39;,), (&#39;G130&#39;,), (&#39;G140&#39;,), (&#39;G150&#39;,), (&#39;G160&#39;,), (&#39;G170&#39;,), (&#39;G200&#39;,), (&#39;G220&#39;,), (&#39;G190&#39;,), (&#39;G240&#39;,), (&#39;G250&#39;,), (&#39;G260&#39;,), (&#39;G270&#39;,), (&#39;G330&#39;,), (&#39;P260&#39;,), (&#39;LWINNI&#39;,), (&#39;LMANIT&#39;,), (&#39;LWINNIPOG&#39;,), (&#39;CEDARL&#39;,), (&#39;M050&#39;,), (&#39;P160&#39;,), (&#39;G295&#39;,), (&#39;S155&#39;,), (&#39;P298&#39;,), (&#39;NA-ET3&#39;,), (&#39;NEP-V&#39;,), (&#39;NA-ET2&#39;,), (&#39;CAR-VII&#39;,), (&#39;CAR-I&#39;,), (&#39;NEP-IV&#39;,)]";
+   var CryptoRegions = "[]";
+   var FailedRegions = "[]"
+
+    if (document.getElementById("dist_map") && portal === "nemesis/secret_squirrel") {
+       dist_map.createPane("gbifOverlay");
+       dist_map.getPane("gbifOverlay").style.zIndex = 650;
+
+       var gbifSpeciesName = "Cyprinus carpio".trim();
+       var gbifNote = document.getElementById("gbif_map_note");
+
+       if (!gbifSpeciesName) {
+           if (gbifNote) {
+               gbifNote.textContent = "No species name provided for GBIF lookup.";
+           }
+       } else {
+           if (gbifNote) {
+               gbifNote.textContent = "GBIF lookup for: " + gbifSpeciesName;
+           }
+           fetch("https://api.gbif.org/v1/species/match?name=" + encodeURIComponent(gbifSpeciesName))
+               .then(function (response) {
+                   return response.json();
+               })
+               .then(function (data) {
+                   var taxonKey = data.usageKey || data.speciesKey || data.genusKey;
+                   if (!taxonKey) {
+                       if (gbifNote) {
+                           gbifNote.textContent = "GBIF taxon key not found for " + gbifSpeciesName + ".";
+                       }
+                       return;
+                   }
+
+                   if (gbifNote) {
+                       gbifNote.textContent =
+                           "GBIF taxonKey: " + taxonKey +
+                           (data.rank ? " (rank: " + data.rank + ")" : "") +
+                           (data.scientificName ? " - " + data.scientificName : "");
+                   }
+
+                   var gbifUrl =
+                       "https://api.gbif.org/v2/map/occurrence/density/{z}/{x}/{y}@1x.png" +
+                       "?taxonKey=" + encodeURIComponent(taxonKey) +
+                       "&style=iNaturalist.poly" +
+                       "&bin=hex" +
+                       "&srs=EPSG:3857";
+
+                   fetch("https://api.gbif.org/v1/occurrence/search?limit=0&taxonKey=" + encodeURIComponent(taxonKey))
+                       .then(function (response) {
+                           return response.json();
+                       })
+                       .then(function (occData) {
+                           var occCount = occData.count || 0;
+                           if (gbifNote) {
+                               gbifNote.innerHTML =
+                                   "<span style='color: red; font-size: 14px;'>●</span> " +
+                                   "GBIF Occurrences for " + gbifSpeciesName +
+                                   " | taxonKey: " + taxonKey +
+                                   " | occurrences: " + occCount +
+                                   " | tiles: " + gbifUrl;
+                           }
+                           if (occCount === 0) {
+                               var gbifMapEl = document.getElementById("gbif_map");
+                               var gbifLabelEl = document.getElementById("gbif_map_label");
+                               if (gbifMapEl) {
+                                   gbifMapEl.style.height = "0px";
+                               }
+                               if (gbifLabelEl) {
+                                   gbifLabelEl.style.visibility = "hidden";
+                               }
+                               if (gbifNote) {
+                                   gbifNote.textContent = "No GBIF occurrences found for " + gbifSpeciesName + ".";
+                               }
+                               return;
+                           }
+
+                           var gbifOverlay = L.tileLayer(gbifUrl, {
+                               maxZoom: 18,
+                               maxNativeZoom: 18,
+                               opacity: 0.8,
+                               attribution: "GBIF",
+                               pane: "gbifOverlay",
+                               crossOrigin: true
+                           }).addTo(dist_map);
+
+                           if (distLayerControl) {
+                               distLayerControl.addOverlay(gbifOverlay, "<span style='color: red; font-size: 14px;'>●</span> GBIF Occurrences (hex)");
+                           }
+                       })
+                       .catch(function () {
+                           if (gbifNote) {
+                               gbifNote.textContent = "Unable to reach the GBIF occurrences API.";
+                           }
+                       });
+               })
+               .catch(function () {
+                   if (gbifNote) {
+                       gbifNote.textContent = "Unable to reach the GBIF API.";
+                   }
+               });
+       }
+   }
+
+  var NatStyle = {
+   "color": "blue",
+   "weight": 1,
+   "fillOpacity": 0.3
+};
+
+  var InvStyle = {
+   "color": "red",
+   "weight": 1,
+   "fillOpacity": 0.3
+  }
+
+  var CryptoStyle = {
+   "color": "yellow",
+   "weight": 1,
+   "fillOpacity": 0.3
+  }
+
+  var FailedStyle = {
+   "color": "pink",
+   "weight": 1,
+   "fillOpacity": 0.3
+  }
+
+
+   var myJSON = $.getJSON("/nemesis/static/json/bioregions.geojson", function(json) {
+     natResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+         return NatBioRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+     })
+     L.geoJSON(natResult, { style: NatStyle }).bindPopup(function (layer){
+         return  "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.properties.REG_LRGGEO + "'>" +   layer.feature.properties.REG_LRGGEO  + "</a>";
+     }).addTo(dist_map);
+     invResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+         return InvBioRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+     })
+     L.geoJSON(invResult, { style: InvStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.properties.REG_LRGGEO + "'>" +   layer.feature.properties.REG_LRGGEO  + "</a>";
+     }).addTo(dist_map);
+     cryptoResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+         return CryptoRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+     })
+     L.geoJSON(cryptoResult, { style: CryptoStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.properties.REG_LRGGEO + "'>" +   layer.feature.properties.REG_LRGGEO  + "</a>";
+     }).addTo(dist_map);
+     failedResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+         return FailedRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+     })
+     L.geoJSON(failedResult, { style: FailedStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.properties.REG_LRGGEO + "'>" +   layer.feature.properties.REG_LRGGEO  + "</a>";
+     }).addTo(dist_map);
+   });
+   
+   var myJSON2 = $.getJSON("/nemesis/static/json/bays_closed.geojson", function(json) {
+     natResult2 = $.grep(myJSON2.responseJSON.features, function (element, index) {
+         return NatBioRegions.includes("&#39;" + element.properties.EDACDA + "&#39;");
+     })
+     L.geoJSON(natResult2, { style: NatStyle }).bindPopup(function (layer){
+         return  "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.properties.EDACDA + "'>" +   layer.feature.properties.EDACDA  + "</a>";
+
+     }).addTo(dist_map);
+     invResult2 = $.grep(myJSON2.responseJSON.features, function (element, index) {
+         return InvBioRegions.includes("&#39;" + element.properties.EDACDA + "&#39;");
+     })
+     L.geoJSON(invResult2, { style: InvStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.properties.EDACDA + "'>" +   layer.feature.properties.EDACDA  + "</a>";
+     }).addTo(dist_map);
+     cryptoResult2 = $.grep(myJSON2.responseJSON.features, function (element, index) {
+         return CryptoRegions.includes("&#39;" + element.properties.EDACDA + "&#39;");
+     })
+     L.geoJSON(cryptoResult2, { style: CryptoStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.properties.EDACDA + "'>" +   layer.feature.properties.EDACDA  + "</a>";
+     }).addTo(dist_map);
+
+     failedResult2 = $.grep(myJSON2.responseJSON.features, function (element, index) {
+         return FailedRegions.includes("&#39;" + element.properties.EDACDA + "&#39;");
+     })
+     L.geoJSON(failedResult2, { style: FailedStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.properties.EDACDA + "'>" +   layer.feature.properties.EDACDA  + "</a>";
+     }).addTo(dist_map);
+   });
+  
+
+    var myJSON3 = $.getJSON("/nemesis/static/json/us-states.json", function (json) {
+        natResult2 = $.grep(myJSON3.responseJSON.features, function (element, index) {
+            return NatBioRegions.includes("&#39;" + element.id + "&#39;");
+        })
+        L.geoJSON(natResult2, { style: NatStyle }).bindPopup(function (layer) {
+            return "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.id + "'>" + layer.feature.id + "</a>";
+
+        }).addTo(dist_map);
+        invResult2 = $.grep(myJSON3.responseJSON.features, function (element, index) {
+            return InvBioRegions.includes("&#39;" + element.id + "&#39;");
+        })
+        L.geoJSON(invResult2, { style: InvStyle }).bindPopup(function (layer) {
+            return "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.id + "'>" + layer.feature.id + "</a>";
+        }).addTo(dist_map);
+        cryptoResult2 = $.grep(myJSON3.responseJSON.features, function (element, index) {
+            return CryptoRegions.includes("&#39;" + element.id + "&#39;");
+        })
+        L.geoJSON(cryptoResult2, { style: CryptoStyle }).bindPopup(function (layer) {
+            return "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.id + "'>" + layer.feature.id + "</a>";
+        }).addTo(dist_map);
+
+        failedResult2 = $.grep(myJSON3.responseJSON.features, function (element, index) {
+            return FailedRegions.includes("&#39;" + element.id + "&#39;");
+        })
+        L.geoJSON(failedResult2, { style: FailedStyle }).bindPopup(function (layer) {
+            return "<a href='/" + portal + "/species_region_summary/163344/" + layer.feature.id + "'>" + layer.feature.id + "</a>";
+        }).addTo(dist_map);
+    });
+//    var myJSON3 = $.getJSON("/nemesis/static/json/bioregions.geojson", function (json) {
+//         natResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+//             return NatBioRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+//         }).addTo(reg_map);
+//    });
+
+
+
+
+
+</script>
+
+
+
+
+      <footer class="container">
+
+        <h6>Cite NEMESIS</h6>
+        Fofonoff PW, Ruiz GM, Steves B, Simkanin C, & Carlton JT (2018) <br>
+        National Exotic Marine and Estuarine Species Information System. <br>
+        https://invasions.si.edu/nemesis<br>
+        Access Date: June 19, 2026
+        <br>
+        <br>
+        <p>Direct questions and comments to <a href='mailto:nemesis@si.edu'>nemesis@si.edu</a>.</p>
+        <a href="https://serc.si.edu"><img height="50" src="/nemesis/static/images/serc.png"><img height="50" src="/nemesis/static/images/serc2.png"></a>
+
+        <p>&copy; </p>
+        
+      </footer>
+    </body>
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--  <script src="//d3js.org/d3.v3.min.js"></script>
+      <script src="//d3js.org/queue.v1.min.js"></script>
+      <script src="//d3js.org/topojson.v1.min.js"></script>
+      <script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+    
+      <script src="/static/js/bioregions.js?v=568"></script>
+      <script src="/static/js/occurrences.js?v=783"></script>
+    -->
+    
+
+</html>

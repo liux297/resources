@@ -1,0 +1,27 @@
+[
+  {
+    "name": "FAO_Cyprinid_Fishes",
+    "url": "http://www.fao.org/3/y4473e/y4473e00.htm",
+    "action": "save_pdf",
+    "status": "success",
+    "timestamp": "2026-06-22T15:04:58.654433",
+    "file_size": 94370,
+    "file_path": "/home/node/.openclaw/workspace/reports/downloaded_pdfs/FAO_Cyprinid_Fishes.pdf"
+  },
+  {
+    "name": "FishBase_Crucian_Carp",
+    "url": "https://www.fishbase.org/summary/Carassius-auratus.html",
+    "action": "save_pdf",
+    "status": "failed",
+    "timestamp": "2026-06-22T15:05:01.395176",
+    "error": "Page.goto: Timeout 120000ms exceeded.\nCall log:\n  - navigating to \"https://www.fishbase.org/summary/Carassius-auratus.html\", waiting until \"networkidle\"\n"
+  },
+  {
+    "name": "USGS_Crucian_Carp",
+    "url": "https://nas.er.usgs.gov/queries/FactSheet.aspx?speciesID=581",
+    "action": "save_pdf",
+    "status": "failed",
+    "timestamp": "2026-06-22T15:07:01.404442",
+    "error": "Page.goto: Timeout 120000ms exceeded.\nCall log:\n  - navigating to \"https://nas.er.usgs.gov/queries/FactSheet.aspx?speciesID=581\", waiting until \"networkidle\"\n"
+  }
+]

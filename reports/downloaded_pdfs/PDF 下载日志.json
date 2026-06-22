@@ -1,0 +1,50 @@
+[
+  {
+    "name": "FAO_Cyprinid_Fishes_World",
+    "url": "https://www.fao.org/3/y4473e/y4473e.pdf",
+    "note": "FAO 鲤科鱼类综述 - 直接 PDF URL",
+    "status": "skipped",
+    "timestamp": "2026-06-22T15:49:07.386333"
+  },
+  {
+    "name": "FishBase_Crucian_Carp",
+    "url": "https://www.fishbase.org/summary/Carassius-auratus.html",
+    "note": "FishBase 鲫鱼资料 - 查找 PDF 下载链接",
+    "status": "failed",
+    "timestamp": "2026-06-22T15:49:12.386513",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "USGS_Crucian_Carp",
+    "url": "https://nas.er.usgs.gov/queries/FactSheet.aspx?speciesID=581",
+    "note": "USGS 鲫鱼事实表 - 直接 PDF 下载",
+    "status": "success",
+    "timestamp": "2026-06-22T15:49:19.156784",
+    "file_size": 269055,
+    "file_path": "/home/node/.openclaw/workspace/reports/downloaded_pdfs/USGS_Crucian_Carp_original.pdf"
+  },
+  {
+    "name": "European_Invasive_Species",
+    "url": "https://europe-invasives.eea.europa.eu/invasivespecies/188/species/23398",
+    "note": "欧洲入侵物种数据库",
+    "status": "failed",
+    "timestamp": "2026-06-22T15:49:27.676897",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "name": "GBIF_Crucian_Carp",
+    "url": "https://www.gbif.org/species/3262948",
+    "note": "全球生物多样性信息平台",
+    "status": "failed",
+    "timestamp": "2026-06-22T15:49:33.538398",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "Biodiversity_Heritage_Library",
+    "url": "https://www.biodiversitylibrary.org/search?query=Crucian+Carp",
+    "note": "生物多样性图书馆 - 历史文献 PDF",
+    "status": "failed",
+    "timestamp": "2026-06-22T15:49:39.895943",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

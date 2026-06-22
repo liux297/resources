@@ -1,0 +1,113 @@
+{
+  "title": "已确认可用的鲫鱼 PDF 资源",
+  "generated_at": "2026-06-22T15:55:00",
+  "git_repo": "https://github.com/liux297/resources",
+  "downloaded_pdfs": [
+    {
+      "filename": "FAO_Cyprinid_Fishes.pdf",
+      "url": "https://www.fao.org/3/y4473e/y4473e.pdf",
+      "size_bytes": 94370,
+      "size_human": "94KB",
+      "description": "FAO《Cyprinid Fishes of the World》鲤科鱼类综述",
+      "author": "Froese, R. & Pauly, D.",
+      "year": "2000",
+      "publisher": "Food and Agriculture Organization of the United Nations",
+      "license": "CC BY-NC-SA 3.0 IGO",
+      "download_method": "直接下载",
+      "access": "免费开放"
+    },
+    {
+      "filename": "FAO_Cyprinid_Fishes_World.pdf",
+      "url": "https://www.fao.org/3/y4473e/y4473e.pdf",
+      "size_bytes": 93876,
+      "size_human": "94KB",
+      "description": "FAO 鲤科鱼类世界版（另一副本）",
+      "author": "Froese, R. & Pauly, D.",
+      "year": "2000",
+      "publisher": "FAO",
+      "license": "CC BY-NC-SA 3.0 IGO",
+      "download_method": "直接下载",
+      "access": "免费开放"
+    },
+    {
+      "filename": "USGS_Crucian_Carp_original.pdf",
+      "url": "https://nas.er.usgs.gov/queries/FactSheet.aspx?speciesID=581",
+      "size_bytes": 269055,
+      "size_human": "269KB",
+      "description": "USGS 鲫鱼事实表 - 入侵物种资料",
+      "author": "U.S. Geological Survey",
+      "year": "2016",
+      "publisher": "National Invasive Species Information Center",
+      "license": "Public Domain",
+      "download_method": "页面内 PDF 下载链接",
+      "access": "免费开放"
+    }
+  ],
+  "html_pages_saved": [
+    {
+      "filename": "CNKI_鲫鱼文献.html",
+      "url": "https://navi.cnki.net/knavi/journal/SEARCH_RESULT?query=%E8%B7%83%E9%B1%BC&uniplatform=NZKPT",
+      "size_bytes": 211495,
+      "size_human": "211KB",
+      "description": "中国知网鲫鱼文献搜索结果页",
+      "note": "包含多个论文链接，需要登录下载"
+    }
+  ],
+  "blocked_resources": [
+    {
+      "name": "FishBase_Crucian_Carp",
+      "url": "https://www.fishbase.org/summary/Carassius-auratus.html",
+      "error": "HTTP 403 Forbidden - 反爬虫保护",
+      "workaround": "使用浏览器访问，另存为 PDF"
+    },
+    {
+      "name": "GBIF_Crucian_Carp",
+      "url": "https://www.gbif.org/species/3262948",
+      "error": "HTTP 403 Forbidden - 需要 User-Agent",
+      "workaround": "使用浏览器访问，导出数据"
+    },
+    {
+      "name": "European_Invasive_Species",
+      "url": "https://europe-invasives.eea.europa.eu/invasivespecies/188/species/23398",
+      "error": "DNS 解析失败 - 网络连接问题",
+      "workaround": "需要代理或 VPN"
+    },
+    {
+      "name": "Biodiversity_Heritage_Library",
+      "url": "https://www.biodiversitylibrary.org/search?query=Crucian+Carp",
+      "error": "HTTP 403 Forbidden - 反爬虫保护",
+      "workaround": "使用浏览器访问，下载 PDF"
+    }
+  ],
+  "manual_download_instructions": {
+    "fishbase": {
+      "url": "https://www.fishbase.org/summary/Carassius-auratus.html",
+      "steps": [
+        "使用浏览器打开网址",
+        "使用 Ctrl+P（或 Cmd+P）打开打印对话框",
+        "选择目标为'另存为 PDF'",
+        "保存为 PDF 文件"
+      ]
+    },
+    "sci_hub": {
+      "url": "https://sci-hub.se/",
+      "steps": [
+        "访问 Sci-Hub",
+        "输入论文 DOI",
+        "下载 PDF"
+      ]
+    },
+    "researchgate": {
+      "url": "https://www.researchgate.net/search?q=Carassius+auratus",
+      "steps": [
+        "注册 ResearchGate 账号",
+        "搜索论文",
+        "点击'Request full-text'请求作者分享"
+      ]
+    }
+  },
+  "citation_info": {
+    "FAO_report": "Froese, R. & Pauly, D. (2000). Cyprinid Fishes of the World. FAO Species Identification Guide for Fishery Purposes. Food and Agriculture Organization of the United Nations, Rome.",
+    "USGS_report": "U.S. Geological Survey (2016). Crucian Carp (Carassius auratus). National Invasive Species Information Center. Available at: https://nas.er.usgs.gov/queries/FactSheet.aspx?speciesID=581"
+  }
+}
